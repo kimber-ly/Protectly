@@ -4,4 +4,8 @@
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="masuk">Masuk</string>
+
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="google_maps_api_key">AIzaSyCy3tT0lLbPu8GNgfDf7lCS9YFzXwbMx-0</string>
+
 </resources>
