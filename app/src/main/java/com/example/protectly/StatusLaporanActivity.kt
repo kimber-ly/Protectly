@@ -16,7 +16,7 @@ class StatusLaporanActivity : AppCompatActivity() {
 
         init()
 
-        recyclerView.LayoutManager = LinearLayoutManager(this@StatusLaporanActivity)
+        recyclerView.layoutManager = LinearLayoutManager(this@StatusLaporanActivity)
         recyclerView.adapter = adapter
     }
 
@@ -24,10 +24,10 @@ class StatusLaporanActivity : AppCompatActivity() {
         recyclerView = findViewById(R.id.recycler_view)
 
         val data = ArrayList<StatusLaporan>()
-        data.add(StatusLaporan(R.drawable.baseline_arrow_forward, "Penyidikan", "Penipuan""Dilaporkan 22 September 2022", "Kode: XXXX/XXXXX/XXXXX"))
-        data.add(StatusLaporan(R.drawable.baseline_arrow_forward, "Penyelidikan", "Pembegalan""Dilaporkan 12 Agustus 2022", "Kode: XXXX/XXXXX/XXXXX"))
-        data.add(StatusLaporan(R.drawable.baseline_arrow_forward, "Penyelidikan Selesai", "Pembegalan""Dilaporkan 8 Mei 2022", "Kode: XXXX/XXXXX/XXXXX"))
-        data.add(StatusLaporan(R.drawable.baseline_arrow_forward, "Penyidikan Diberhentikan", "Pembegalan""Dilaporkan 8 Mei 2022", "Kode: XXXX/XXXXX/XXXXX"))
+        data.add(StatusLaporan(R.drawable.baseline_arrow_forward, "Penyidikan", "Penipuan","Dilaporkan 22 September 2022", "Kode: XXXX/XXXXX/XXXXX"))
+        data.add(StatusLaporan(R.drawable.baseline_arrow_forward, "Penyelidikan", "Pembegalan","Dilaporkan 12 Agustus 2022", "Kode: XXXX/XXXXX/XXXXX"))
+        data.add(StatusLaporan(R.drawable.baseline_arrow_forward, "Penyelidikan Selesai", "Pembegalan","Dilaporkan 8 Mei 2022", "Kode: XXXX/XXXXX/XXXXX"))
+        data.add(StatusLaporan(R.drawable.baseline_arrow_forward, "Penyidikan Diberhentikan", "Pembegalan","Dilaporkan 8 Mei 2022", "Kode: XXXX/XXXXX/XXXXX"))
 
         adapter = MyAdapter(data)
     }
