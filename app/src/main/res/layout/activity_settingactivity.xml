@@ -10,10 +10,11 @@
         android:id="@+id/gambar1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
         android:src="@drawable/baseline_arrow_back"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -21,30 +22,32 @@
         android:id="@+id/text_view1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
         android:text="Setting"
-        android:textSize="40sp"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.455"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/gambar1"
         app:layout_constraintTop_toTopOf="@id/gambar1" />
 
     <ImageView
         android:id="@+id/gambar2"
-        android:layout_marginRight="20dp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="@id/text_view1"
+        android:layout_height="40dp"
+        android:scaleType="fitXY"
+        android:layout_marginEnd="24dp"
         android:src="@drawable/baseline_logout"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/text_view1" />
 
     <TextView
         android:id="@+id/text_akun"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="44dp"
         android:text="Akun"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -53,23 +56,26 @@
 
     <Button
         android:id="@+id/button_akun1"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="60dp"
+        android:layout_marginStart="25dp"
         android:layout_marginTop="20dp"
-        android:layout_marginLeft="25dp"
+        android:layout_marginEnd="25dp"
         android:background="@drawable/button"
-        android:layout_marginRight="25dp"
-        app:layout_constraintTop_toBottomOf="@id/text_akun"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_akun" />
 
     <ImageView
         android:id="@+id/gambar_akun"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/baseline_securit"
         android:layout_marginStart="20dp"
+        android:src="@drawable/baseline_securit"
+        app:layout_constraintBottom_toBottomOf="@id/button_akun1"
         app:layout_constraintStart_toStartOf="@+id/button_akun1"
-        app:layout_constraintTop_toTopOf="@+id/button_akun1"
-        app:layout_constraintBottom_toBottomOf="@id/button_akun1"/>
+        app:layout_constraintTop_toTopOf="@+id/button_akun1" />
 
     <TextView
         android:id="@+id/text_akun1"
@@ -77,29 +83,30 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:layout_marginTop="15dp"
-        android:textSize="12sp"
         android:text="Keamanan Akun"
-        android:textStyle="bold"
         android:textColor="#00174C"
+        android:textSize="12sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@id/gambar_akun"
         app:layout_constraintTop_toTopOf="@id/button_akun1" />
 
     <TextView
+        android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Email, Kata Sandi"
         android:textSize="10sp"
-        app:layout_constraintTop_toBottomOf="@id/text_akun1"
-        app:layout_constraintStart_toStartOf="@id/text_akun1"/>
+        app:layout_constraintStart_toStartOf="@id/text_akun1"
+        app:layout_constraintTop_toBottomOf="@id/text_akun1" />
 
     <ImageView
+        android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="20dp"
         android:src="@drawable/baseline_arrow_forward"
         app:layout_constraintEnd_toEndOf="@id/button_akun1"
-        app:layout_constraintTop_toTopOf="@+id/gambar_akun"
-        />
+        app:layout_constraintTop_toTopOf="@+id/gambar_akun" />
 
     <TextView
         android:id="@+id/textizin"
@@ -112,25 +119,27 @@
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@id/text_akun"
         app:layout_constraintTop_toBottomOf="@id/button_akun1" />
+
     <Button
         android:id="@+id/button_izin1"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginLeft="25dp"
-        android:layout_marginRight="25dp"
         android:layout_marginTop="20dp"
+        android:layout_marginRight="25dp"
         android:background="@drawable/button"
         app:layout_constraintTop_toBottomOf="@id/textizin"
         tools:layout_editor_absoluteX="-101dp" />
+
     <ImageView
         android:id="@+id/gambar_izin1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/baseline_notifications"
         android:layout_marginStart="20dp"
+        android:src="@drawable/baseline_notifications"
+        app:layout_constraintBottom_toBottomOf="@id/button_izin1"
         app:layout_constraintStart_toStartOf="@+id/button_izin1"
-        app:layout_constraintTop_toTopOf="@+id/button_izin1"
-        app:layout_constraintBottom_toBottomOf="@id/button_izin1"/>
+        app:layout_constraintTop_toTopOf="@+id/button_izin1" />
 
     <TextView
         android:id="@+id/text_izin1"
@@ -138,49 +147,50 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:layout_marginTop="15dp"
-        android:textSize="12sp"
         android:text="Notifikasi"
-        android:textStyle="bold"
         android:textColor="#00174C"
+        android:textSize="12sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@id/gambar_izin1"
         app:layout_constraintTop_toTopOf="@id/button_izin1" />
 
     <TextView
+        android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Notifikasi, Pesan SOS,  Daerah Rawan"
         android:textSize="10sp"
-        app:layout_constraintTop_toBottomOf="@id/text_izin1"
-        app:layout_constraintStart_toStartOf="@id/text_izin1"/>
+        app:layout_constraintStart_toStartOf="@id/text_izin1"
+        app:layout_constraintTop_toBottomOf="@id/text_izin1" />
 
     <ImageView
+        android:id="@+id/imageView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="20dp"
         android:src="@drawable/baseline_arrow_forward"
         app:layout_constraintEnd_toEndOf="@id/button_izin1"
-        app:layout_constraintTop_toTopOf="@+id/gambar_izin1"
-        />
+        app:layout_constraintTop_toTopOf="@+id/gambar_izin1" />
 
     <Button
         android:id="@+id/button_izin2"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:layout_marginTop="10dp"
         android:layout_marginLeft="25dp"
-        android:background="@drawable/button"
+        android:layout_marginTop="10dp"
         android:layout_marginRight="25dp"
+        android:background="@drawable/button"
         app:layout_constraintTop_toBottomOf="@+id/button_izin1" />
 
     <ImageView
         android:id="@+id/gambar_izin2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/baseline_contrast"
         android:layout_marginStart="20dp"
+        android:src="@drawable/baseline_contrast"
+        app:layout_constraintBottom_toBottomOf="@id/button_izin2"
         app:layout_constraintStart_toStartOf="@+id/button_izin2"
-        app:layout_constraintTop_toTopOf="@+id/button_izin2"
-        app:layout_constraintBottom_toBottomOf="@id/button_izin2"/>
+        app:layout_constraintTop_toTopOf="@+id/button_izin2" />
 
     <TextView
         android:id="@+id/text_izin2"
@@ -188,38 +198,39 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:layout_marginTop="15dp"
-        android:textSize="12sp"
         android:text="Tema"
-        android:textStyle="bold"
         android:textColor="#00174C"
+        android:textSize="12sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@id/gambar_izin2"
         app:layout_constraintTop_toTopOf="@id/button_izin2" />
 
     <TextView
+        android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Tema Aplikasi"
         android:textSize="10sp"
-        app:layout_constraintTop_toBottomOf="@id/text_izin2"
-        app:layout_constraintStart_toStartOf="@id/text_izin2"/>
+        app:layout_constraintStart_toStartOf="@id/text_izin2"
+        app:layout_constraintTop_toBottomOf="@id/text_izin2" />
 
     <ImageView
+        android:id="@+id/imageView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="20dp"
         android:src="@drawable/baseline_arrow_forward"
         app:layout_constraintEnd_toEndOf="@id/button_izin2"
-        app:layout_constraintTop_toTopOf="@+id/gambar_izin2"
-        />
+        app:layout_constraintTop_toTopOf="@+id/gambar_izin2" />
 
     <Button
         android:id="@+id/button_izin3"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:layout_marginTop="10dp"
         android:layout_marginLeft="25dp"
-        android:background="@drawable/button"
+        android:layout_marginTop="10dp"
         android:layout_marginRight="25dp"
+        android:background="@drawable/button"
         app:layout_constraintTop_toBottomOf="@+id/button_izin2" />
 
 
@@ -227,11 +238,11 @@
         android:id="@+id/gambar_izin3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/baseline_language"
         android:layout_marginStart="20dp"
+        android:src="@drawable/baseline_language"
+        app:layout_constraintBottom_toBottomOf="@id/button_izin3"
         app:layout_constraintStart_toStartOf="@+id/button_izin3"
-        app:layout_constraintTop_toTopOf="@+id/button_izin3"
-        app:layout_constraintBottom_toBottomOf="@id/button_izin3"/>
+        app:layout_constraintTop_toTopOf="@+id/button_izin3" />
 
     <TextView
         android:id="@+id/text_izin3"
@@ -239,50 +250,51 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:layout_marginTop="15dp"
-        android:textSize="12sp"
         android:text="Bahasa"
-        android:textStyle="bold"
         android:textColor="#00174C"
+        android:textSize="12sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@id/gambar_izin3"
         app:layout_constraintTop_toTopOf="@id/button_izin3" />
 
 
     <TextView
+        android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Bahasa Inggris, Bahasa Indonesia"
         android:textSize="10sp"
-        app:layout_constraintTop_toBottomOf="@id/text_izin3"
-        app:layout_constraintStart_toStartOf="@id/text_izin3"/>
+        app:layout_constraintStart_toStartOf="@id/text_izin3"
+        app:layout_constraintTop_toBottomOf="@id/text_izin3" />
 
     <ImageView
+        android:id="@+id/imageView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="20dp"
         android:src="@drawable/baseline_arrow_forward"
         app:layout_constraintEnd_toEndOf="@id/button_izin3"
-        app:layout_constraintTop_toTopOf="@+id/gambar_izin3"
-        />
+        app:layout_constraintTop_toTopOf="@+id/gambar_izin3" />
 
     <Button
         android:id="@+id/button_izin4"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:layout_marginTop="10dp"
         android:layout_marginLeft="25dp"
-        android:background="@drawable/button"
+        android:layout_marginTop="10dp"
         android:layout_marginRight="25dp"
+        android:background="@drawable/button"
         app:layout_constraintTop_toBottomOf="@+id/button_izin3" />
 
     <ImageView
         android:id="@+id/gambar_izin4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/baseline_key"
         android:layout_marginStart="20dp"
+        android:src="@drawable/baseline_key"
+        app:layout_constraintBottom_toBottomOf="@id/button_izin4"
         app:layout_constraintStart_toStartOf="@+id/button_izin4"
-        app:layout_constraintTop_toTopOf="@+id/button_izin4"
-        app:layout_constraintBottom_toBottomOf="@id/button_izin4"/>
+        app:layout_constraintTop_toTopOf="@+id/button_izin4" />
 
 
     <TextView
@@ -291,29 +303,30 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:layout_marginTop="15dp"
-        android:textSize="12sp"
         android:text="Perizinan"
-        android:textStyle="bold"
         android:textColor="#00174C"
+        android:textSize="12sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@id/gambar_izin4"
         app:layout_constraintTop_toTopOf="@id/button_izin4" />
 
     <TextView
+        android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Akses Lokasi"
         android:textSize="10sp"
-        app:layout_constraintTop_toBottomOf="@id/text_izin4"
-        app:layout_constraintStart_toStartOf="@id/text_izin4"/>
+        app:layout_constraintStart_toStartOf="@id/text_izin4"
+        app:layout_constraintTop_toBottomOf="@id/text_izin4" />
 
     <ImageView
+        android:id="@+id/imageView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="20dp"
         android:src="@drawable/baseline_arrow_forward"
         app:layout_constraintEnd_toEndOf="@id/button_izin4"
-        app:layout_constraintTop_toTopOf="@+id/gambar_izin4"
-        />
+        app:layout_constraintTop_toTopOf="@+id/gambar_izin4" />
 
     <TextView
         android:id="@+id/text_bantuan"
@@ -331,21 +344,21 @@
         android:id="@+id/button_bantuan1"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:layout_marginTop="15dp"
         android:layout_marginLeft="25dp"
-        android:background="@drawable/button"
+        android:layout_marginTop="15dp"
         android:layout_marginRight="25dp"
-        app:layout_constraintTop_toBottomOf="@id/text_bantuan"/>
+        android:background="@drawable/button"
+        app:layout_constraintTop_toBottomOf="@id/text_bantuan" />
 
     <ImageView
         android:id="@+id/gambar_bantuan1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/baseline_warning_amber"
         android:layout_marginStart="20dp"
+        android:src="@drawable/baseline_warning_amber"
+        app:layout_constraintBottom_toBottomOf="@id/button_bantuan1"
         app:layout_constraintStart_toStartOf="@+id/button_bantuan1"
-        app:layout_constraintTop_toTopOf="@+id/button_bantuan1"
-        app:layout_constraintBottom_toBottomOf="@id/button_bantuan1"/>
+        app:layout_constraintTop_toTopOf="@+id/button_bantuan1" />
 
     <TextView
         android:id="@+id/text_bantuan1"
@@ -353,49 +366,50 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:layout_marginTop="15dp"
-        android:textSize="12sp"
         android:text="Laporkan Masalah"
-        android:textStyle="bold"
         android:textColor="#00174C"
+        android:textSize="12sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@id/gambar_bantuan1"
         app:layout_constraintTop_toTopOf="@id/button_bantuan1" />
 
     <TextView
+        android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Masalah SOS, Daerah Rawan, dll"
         android:textSize="10sp"
-        app:layout_constraintTop_toBottomOf="@id/text_bantuan1"
-        app:layout_constraintStart_toStartOf="@id/text_bantuan1"/>
+        app:layout_constraintStart_toStartOf="@id/text_bantuan1"
+        app:layout_constraintTop_toBottomOf="@id/text_bantuan1" />
 
     <ImageView
+        android:id="@+id/imageView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="20dp"
         android:src="@drawable/baseline_arrow_forward"
         app:layout_constraintEnd_toEndOf="@id/button_bantuan1"
-        app:layout_constraintTop_toTopOf="@+id/gambar_bantuan1"
-        />
+        app:layout_constraintTop_toTopOf="@+id/gambar_bantuan1" />
 
     <Button
         android:id="@+id/button_bantuan2"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:layout_marginTop="10dp"
         android:layout_marginLeft="25dp"
-        android:background="@drawable/button"
+        android:layout_marginTop="10dp"
         android:layout_marginRight="25dp"
+        android:background="@drawable/button"
         app:layout_constraintTop_toBottomOf="@+id/button_bantuan1" />
 
     <ImageView
         android:id="@+id/gambar_bantuan2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/baseline_groups_2_24"
         android:layout_marginStart="20dp"
+        android:src="@drawable/baseline_groups_2_24"
+        app:layout_constraintBottom_toBottomOf="@id/button_bantuan2"
         app:layout_constraintStart_toStartOf="@+id/button_bantuan2"
-        app:layout_constraintTop_toTopOf="@+id/button_bantuan2"
-        app:layout_constraintBottom_toBottomOf="@id/button_bantuan2"/>
+        app:layout_constraintTop_toTopOf="@+id/button_bantuan2" />
 
     <TextView
         android:id="@+id/text_bantuan2"
@@ -403,29 +417,30 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:layout_marginTop="15dp"
-        android:textSize="12sp"
         android:text="Tentang Kami"
-        android:textStyle="bold"
         android:textColor="#00174C"
+        android:textSize="12sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@id/gambar_bantuan2"
         app:layout_constraintTop_toTopOf="@id/button_bantuan2" />
 
     <TextView
+        android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Tentang Pembuat Aplikasi"
         android:textSize="10sp"
-        app:layout_constraintTop_toBottomOf="@id/text_bantuan2"
-        app:layout_constraintStart_toStartOf="@id/text_bantuan2"/>
+        app:layout_constraintStart_toStartOf="@id/text_bantuan2"
+        app:layout_constraintTop_toBottomOf="@id/text_bantuan2" />
 
     <ImageView
+        android:id="@+id/imageView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="20dp"
         android:src="@drawable/baseline_arrow_forward"
         app:layout_constraintEnd_toEndOf="@id/button_bantuan2"
-        app:layout_constraintTop_toTopOf="@+id/gambar_bantuan2"/>
-
+        app:layout_constraintTop_toTopOf="@+id/gambar_bantuan2" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

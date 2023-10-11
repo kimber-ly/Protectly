@@ -15,6 +15,7 @@ class HomeFragment : Fragment(), View.OnClickListener {
     // TODO: Rename and change types of parameters
     private lateinit var profile: ImageView
     private lateinit var settings: ImageView
+    private lateinit var map: ImageView
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -24,9 +25,11 @@ class HomeFragment : Fragment(), View.OnClickListener {
         val view = inflater.inflate(R.layout.fragment_home, container, false)
         profile = view.findViewById(R.id.img_profile)
         settings = view.findViewById(R.id.icon_settings)
+        map = view.findViewById(R.id.map)
 
         profile.setOnClickListener(this)
         settings.setOnClickListener(this)
+        map.setOnClickListener(this)
         return view
 
     }
@@ -39,6 +42,10 @@ class HomeFragment : Fragment(), View.OnClickListener {
             }
             R.id.icon_settings -> {
                 val intent = Intent(requireActivity(), SettingsActivity::class.java)
+                startActivity(intent)
+            }
+            R.id.map -> {
+                val intent = Intent(requireActivity(), LokasiActivity::class.java)
                 startActivity(intent)
             }
         }
