@@ -27,10 +27,6 @@
         <activity
             android:name=".ProfileActivity"
             android:exported="false" />
-        <activity
-            android:name=".NavBarActivity"
-            android:exported="false"
-            android:label="@string/title_activity_nav_bar" />
         <!--
              TODO: Before you run your application, you need a Google Maps API key.
 
