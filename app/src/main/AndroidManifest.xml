@@ -56,9 +56,6 @@
             android:name=".LokasiActivity"
             android:exported="false" />
         <activity
-            android:name=".SearchActivity"
-            android:exported="false" />
-        <activity
             android:name=".SettingsActivity"
             android:exported="false" />
         <activity

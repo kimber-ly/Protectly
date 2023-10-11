@@ -4,11 +4,11 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:cardCornerRadius="8dp"
+
     app:cardBackgroundColor="#E2E1EC"
     app:cardUseCompatPadding="true"
     android:layout_marginHorizontal="8dp"
-    app:cardElevation="12dp">
+    >
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
