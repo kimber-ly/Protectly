@@ -57,10 +57,7 @@
             android:name=".SearchActivity"
             android:exported="false" />
         <activity
-            android:name=".settingactivity"
-            android:exported="false" />
-        <activity
-            android:name=".CameraActivity"
+            android:name=".SettingsActivity"
             android:exported="false" />
         <activity
             android:name=".StatusLaporanActivity"

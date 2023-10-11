@@ -14,5 +14,11 @@
 
     <string name="title_activity_maps">MapsActivity</string>
     <string name="google_maps_api_key">AIzaSyCy3tT0lLbPu8GNgfDf7lCS9YFzXwbMx-0</string>
+    <string name="kontak">Kontak</string>
+    <string name="rekam">Rekam</string>
+    <string name="laporan">Laporan</string>
+    <string name="edukasi">Edukasi</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
