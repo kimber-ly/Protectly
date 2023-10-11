@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    android:layout_marginVertical="10dp"
+    android:layout_marginHorizontal="10dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/button"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:id="@+id/listImage1"
+            android:src="@drawable/img_kontak2"
+            android:scaleType="centerCrop"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/listName1"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/listImage1"
+            android:text="Polisi"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/listnomor1"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="35dp"
+            android:layout_toEndOf="@id/listImage1"
+            android:text="112"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <ImageButton
+            android:id="@+id/btn_call1"
+            android:layout_width="27dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginVertical="25dp"
+            android:layout_marginHorizontal="80dp"
+            android:src="@drawable/ic_telepon"
+            android:background="@drawable/button"
+            android:layout_height="27dp"/>
+        <ImageButton
+            android:id="@+id/btn_pesan1"
+            android:layout_width="27dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginVertical="25dp"
+            android:layout_marginHorizontal="30dp"
+            android:background="@drawable/button"
+            android:src="@drawable/ic_pesan"
+            android:layout_height="27dp"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/button"
+        android:layout_marginTop="90dp"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:id="@+id/listImage"
+            android:src="@drawable/img_kontak1"
+            android:scaleType="centerCrop"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/listName"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/listImage"
+            android:text="Ibu"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/listnomor"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="35dp"
+            android:layout_toEndOf="@id/listImage"
+            android:text="+62 7801569"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <ImageButton
+            android:id="@+id/btn_call"
+            android:layout_width="27dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginVertical="25dp"
+            android:layout_marginHorizontal="80dp"
+            android:src="@drawable/ic_telepon"
+            android:background="@drawable/button"
+            android:layout_height="27dp"/>
+        <ImageButton
+            android:id="@+id/btn_pesan"
+            android:layout_width="27dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginVertical="25dp"
+            android:layout_marginHorizontal="30dp"
+            android:background="@drawable/button"
+            android:src="@drawable/ic_pesan"
+            android:layout_height="27dp"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/button"
+        android:layout_marginTop="180dp"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:id="@+id/listImage2"
+            android:src="@drawable/img_kontak3"
+            android:scaleType="centerCrop"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/listName2"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/listImage2"
+            android:text="Ayah"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/listnomor2"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="35dp"
+            android:layout_toEndOf="@id/listImage2"
+            android:text="+62 8967821"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <ImageButton
+            android:id="@+id/btn_call2"
+            android:layout_width="27dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginVertical="25dp"
+            android:layout_marginHorizontal="80dp"
+            android:src="@drawable/ic_telepon"
+            android:background="@drawable/button"
+            android:layout_height="27dp"/>
+        <ImageButton
+            android:id="@+id/btn_pesan2"
+            android:layout_width="27dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginVertical="25dp"
+            android:layout_marginHorizontal="30dp"
+            android:background="@drawable/button"
+            android:src="@drawable/ic_pesan"
+            android:layout_height="27dp"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/button"
+        android:layout_marginTop="270dp"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:id="@+id/listImage3"
+            android:src="@drawable/img_kontak4"
+            android:scaleType="centerCrop"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/listName3"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/listImage3"
+            android:text="Bestie"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/listnomor3"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="35dp"
+            android:layout_toEndOf="@id/listImage3"
+            android:text="+62 7118450"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <ImageButton
+            android:id="@+id/btn_call3"
+            android:layout_width="27dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginVertical="25dp"
+            android:layout_marginHorizontal="80dp"
+            android:src="@drawable/ic_telepon"
+            android:background="@drawable/button"
+            android:layout_height="27dp"/>
+        <ImageButton
+            android:id="@+id/btn_pesan3"
+            android:layout_width="27dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginVertical="25dp"
+            android:layout_marginHorizontal="30dp"
+            android:background="@drawable/button"
+            android:src="@drawable/ic_pesan"
+            android:layout_height="27dp"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/button"
+        android:layout_marginTop="360dp"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:id="@+id/listImage4"
+            android:src="@drawable/img_kontak6"
+            android:scaleType="centerCrop"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/listName4"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/listImage4"
+            android:text="Abang"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/listnomor4"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="35dp"
+            android:layout_toEndOf="@id/listImage4"
+            android:text="+62 2186610"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <ImageButton
+            android:id="@+id/btn_call4"
+            android:layout_width="27dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginVertical="25dp"
+            android:layout_marginHorizontal="80dp"
+            android:src="@drawable/ic_telepon"
+            android:background="@drawable/button"
+            android:layout_height="27dp"/>
+        <ImageButton
+            android:id="@+id/btn_pesan4"
+            android:layout_width="27dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginVertical="25dp"
+            android:layout_marginHorizontal="30dp"
+            android:background="@drawable/button"
+            android:src="@drawable/ic_pesan"
+            android:layout_height="27dp"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/button"
+        android:layout_marginTop="450dp"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:id="@+id/listImage6"
+            android:src="@drawable/img_kontak_6"
+            android:scaleType="centerCrop"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/listName6"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/listImage6"
+            android:text="Pak RT"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/listnomor6"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="35dp"
+            android:layout_toEndOf="@id/listImage6"
+            android:text="+62 896778"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <ImageButton
+            android:id="@+id/btn_call6"
+            android:layout_width="27dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginVertical="25dp"
+            android:layout_marginHorizontal="80dp"
+            android:src="@drawable/ic_telepon"
+            android:background="@drawable/button"
+            android:layout_height="27dp"/>
+        <ImageButton
+            android:id="@+id/btn_pesan6"
+            android:layout_width="27dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginVertical="25dp"
+            android:layout_marginHorizontal="30dp"
+            android:background="@drawable/button"
+            android:src="@drawable/ic_pesan"
+            android:layout_height="27dp"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/button"
+        android:layout_marginTop="540dp"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:id="@+id/listImage7"
+            android:src="@drawable/img_kontak_6"
+            android:scaleType="centerCrop"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/listName7"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/listImage7"
+            android:text="Pak RT"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/listnomor7"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="35dp"
+            android:layout_toEndOf="@id/listImage7"
+            android:text="+62 896778"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <ImageButton
+            android:id="@+id/btn_call7"
+            android:layout_width="27dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginVertical="25dp"
+            android:layout_marginHorizontal="80dp"
+            android:src="@drawable/ic_telepon"
+            android:background="@drawable/button"
+            android:layout_height="27dp"/>
+        <ImageButton
+            android:id="@+id/btn_pesan7"
+            android:layout_width="27dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginVertical="25dp"
+            android:layout_marginHorizontal="30dp"
+            android:background="@drawable/button"
+            android:src="@drawable/ic_pesan"
+            android:layout_height="27dp"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/button"
+        android:layout_marginTop="630dp"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:id="@+id/listImage5"
+            android:src="@drawable/img_kontak_6"
+            android:scaleType="centerCrop"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/listName5"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/listImage5"
+            android:text="Pak RT"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/listnomor5"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="35dp"
+            android:layout_toEndOf="@id/listImage5"
+            android:text="+62 896778"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <ImageButton
+            android:id="@+id/btn_call5"
+            android:layout_width="27dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginVertical="25dp"
+            android:layout_marginHorizontal="80dp"
+            android:src="@drawable/ic_telepon"
+            android:background="@drawable/button"
+            android:layout_height="27dp"/>
+        <ImageButton
+            android:id="@+id/btn_pesan5"
+            android:layout_width="27dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginVertical="25dp"
+            android:layout_marginHorizontal="30dp"
+            android:background="@drawable/button"
+            android:src="@drawable/ic_pesan"
+            android:layout_height="27dp"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/button"
+        android:layout_marginTop="720dp"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:id="@+id/listImage9"
+            android:src="@drawable/img_kontak_6"
+            android:scaleType="centerCrop"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/listName9"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/listImage9"
+            android:text="Pak RT"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/listnomor9"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="35dp"
+            android:layout_toEndOf="@id/listImage9"
+            android:text="+62 896778"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <ImageButton
+            android:id="@+id/btn_call9"
+            android:layout_width="27dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginVertical="25dp"
+            android:layout_marginHorizontal="80dp"
+            android:src="@drawable/ic_telepon"
+            android:background="@drawable/button"
+            android:layout_height="27dp" />
+        <ImageButton
+            android:id="@+id/btn_pesan9"
+            android:layout_width="27dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginVertical="25dp"
+            android:layout_marginHorizontal="30dp"
+            android:background="@drawable/button"
+            android:src="@drawable/ic_pesan"
+            android:layout_height="27dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

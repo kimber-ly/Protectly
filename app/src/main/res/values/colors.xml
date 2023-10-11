@@ -3,4 +3,5 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="bg_btn">#E2E1EC</color>
+    <color name="bg_btn_SOS">#F22B2B</color>
 </resources>
