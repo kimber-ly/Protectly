@@ -21,11 +21,12 @@
         android:id="@+id/text_view1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
         android:text="Setting"
         android:textSize="40sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.451"
+        app:layout_constraintHorizontal_bias="0.455"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/gambar1" />
 
@@ -42,17 +43,19 @@
         android:id="@+id/text_akun"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
+        android:layout_marginStart="48dp"
         android:layout_marginTop="40dp"
         android:text="Akun"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@id/gambar1"
         app:layout_constraintTop_toBottomOf="@id/gambar1" />
+
     <Button
         android:id="@+id/button_akun1"
         android:layout_width="match_parent"
         android:layout_height="60dp"
+        android:layout_marginTop="20dp"
         android:layout_marginLeft="25dp"
         android:background="@drawable/button"
         android:layout_marginRight="25dp"
@@ -97,4 +100,332 @@
         app:layout_constraintEnd_toEndOf="@id/button_akun1"
         app:layout_constraintTop_toTopOf="@+id/gambar_akun"
         />
+
+    <TextView
+        android:id="@+id/textizin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="40dp"
+        android:text="Tampilan dan Perizinan"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/text_akun"
+        app:layout_constraintTop_toBottomOf="@id/button_akun1" />
+    <Button
+        android:id="@+id/button_izin1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button"
+        app:layout_constraintTop_toBottomOf="@id/textizin"
+        tools:layout_editor_absoluteX="-101dp" />
+    <ImageView
+        android:id="@+id/gambar_izin1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_notifications"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="@+id/button_izin1"
+        app:layout_constraintTop_toTopOf="@+id/button_izin1"
+        app:layout_constraintBottom_toBottomOf="@id/button_izin1"/>
+
+    <TextView
+        android:id="@+id/text_izin1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:textSize="12sp"
+        android:text="Notifikasi"
+        android:textStyle="bold"
+        android:textColor="#00174C"
+        app:layout_constraintStart_toEndOf="@id/gambar_izin1"
+        app:layout_constraintTop_toTopOf="@id/button_izin1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notifikasi, Pesan SOS,  Daerah Rawan"
+        android:textSize="10sp"
+        app:layout_constraintTop_toBottomOf="@id/text_izin1"
+        app:layout_constraintStart_toStartOf="@id/text_izin1"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/baseline_arrow_forward"
+        app:layout_constraintEnd_toEndOf="@id/button_izin1"
+        app:layout_constraintTop_toTopOf="@+id/gambar_izin1"
+        />
+
+    <Button
+        android:id="@+id/button_izin2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:background="@drawable/button"
+        android:layout_marginRight="25dp"
+        app:layout_constraintTop_toBottomOf="@+id/button_izin1" />
+
+    <ImageView
+        android:id="@+id/gambar_izin2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_contrast"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="@+id/button_izin2"
+        app:layout_constraintTop_toTopOf="@+id/button_izin2"
+        app:layout_constraintBottom_toBottomOf="@id/button_izin2"/>
+
+    <TextView
+        android:id="@+id/text_izin2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:textSize="12sp"
+        android:text="Tema"
+        android:textStyle="bold"
+        android:textColor="#00174C"
+        app:layout_constraintStart_toEndOf="@id/gambar_izin2"
+        app:layout_constraintTop_toTopOf="@id/button_izin2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tema Aplikasi"
+        android:textSize="10sp"
+        app:layout_constraintTop_toBottomOf="@id/text_izin2"
+        app:layout_constraintStart_toStartOf="@id/text_izin2"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/baseline_arrow_forward"
+        app:layout_constraintEnd_toEndOf="@id/button_izin2"
+        app:layout_constraintTop_toTopOf="@+id/gambar_izin2"
+        />
+
+    <Button
+        android:id="@+id/button_izin3"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:background="@drawable/button"
+        android:layout_marginRight="25dp"
+        app:layout_constraintTop_toBottomOf="@+id/button_izin2" />
+
+
+    <ImageView
+        android:id="@+id/gambar_izin3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_language"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="@+id/button_izin3"
+        app:layout_constraintTop_toTopOf="@+id/button_izin3"
+        app:layout_constraintBottom_toBottomOf="@id/button_izin3"/>
+
+    <TextView
+        android:id="@+id/text_izin3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:textSize="12sp"
+        android:text="Bahasa"
+        android:textStyle="bold"
+        android:textColor="#00174C"
+        app:layout_constraintStart_toEndOf="@id/gambar_izin3"
+        app:layout_constraintTop_toTopOf="@id/button_izin3" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bahasa Inggris, Bahasa Indonesia"
+        android:textSize="10sp"
+        app:layout_constraintTop_toBottomOf="@id/text_izin3"
+        app:layout_constraintStart_toStartOf="@id/text_izin3"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/baseline_arrow_forward"
+        app:layout_constraintEnd_toEndOf="@id/button_izin3"
+        app:layout_constraintTop_toTopOf="@+id/gambar_izin3"
+        />
+
+    <Button
+        android:id="@+id/button_izin4"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:background="@drawable/button"
+        android:layout_marginRight="25dp"
+        app:layout_constraintTop_toBottomOf="@+id/button_izin3" />
+
+    <ImageView
+        android:id="@+id/gambar_izin4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_key"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="@+id/button_izin4"
+        app:layout_constraintTop_toTopOf="@+id/button_izin4"
+        app:layout_constraintBottom_toBottomOf="@id/button_izin4"/>
+
+
+    <TextView
+        android:id="@+id/text_izin4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:textSize="12sp"
+        android:text="Perizinan"
+        android:textStyle="bold"
+        android:textColor="#00174C"
+        app:layout_constraintStart_toEndOf="@id/gambar_izin4"
+        app:layout_constraintTop_toTopOf="@id/button_izin4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Akses Lokasi"
+        android:textSize="10sp"
+        app:layout_constraintTop_toBottomOf="@id/text_izin4"
+        app:layout_constraintStart_toStartOf="@id/text_izin4"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/baseline_arrow_forward"
+        app:layout_constraintEnd_toEndOf="@id/button_izin4"
+        app:layout_constraintTop_toTopOf="@+id/gambar_izin4"
+        />
+
+    <TextView
+        android:id="@+id/text_bantuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="40dp"
+        android:text="Bantuan dan FAQ"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/textizin"
+        app:layout_constraintTop_toBottomOf="@id/button_izin4" />
+
+    <Button
+        android:id="@+id/button_bantuan1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="25dp"
+        android:background="@drawable/button"
+        android:layout_marginRight="25dp"
+        app:layout_constraintTop_toBottomOf="@id/text_bantuan"/>
+
+    <ImageView
+        android:id="@+id/gambar_bantuan1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_warning_amber"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="@+id/button_bantuan1"
+        app:layout_constraintTop_toTopOf="@+id/button_bantuan1"
+        app:layout_constraintBottom_toBottomOf="@id/button_bantuan1"/>
+
+    <TextView
+        android:id="@+id/text_bantuan1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:textSize="12sp"
+        android:text="Laporkan Masalah"
+        android:textStyle="bold"
+        android:textColor="#00174C"
+        app:layout_constraintStart_toEndOf="@id/gambar_bantuan1"
+        app:layout_constraintTop_toTopOf="@id/button_bantuan1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Masalah SOS, Daerah Rawan, dll"
+        android:textSize="10sp"
+        app:layout_constraintTop_toBottomOf="@id/text_bantuan1"
+        app:layout_constraintStart_toStartOf="@id/text_bantuan1"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/baseline_arrow_forward"
+        app:layout_constraintEnd_toEndOf="@id/button_bantuan1"
+        app:layout_constraintTop_toTopOf="@+id/gambar_bantuan1"
+        />
+
+    <Button
+        android:id="@+id/button_bantuan2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:background="@drawable/button"
+        android:layout_marginRight="25dp"
+        app:layout_constraintTop_toBottomOf="@+id/button_bantuan1" />
+
+    <ImageView
+        android:id="@+id/gambar_bantuan2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_groups_2_24"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="@+id/button_bantuan2"
+        app:layout_constraintTop_toTopOf="@+id/button_bantuan2"
+        app:layout_constraintBottom_toBottomOf="@id/button_bantuan2"/>
+
+    <TextView
+        android:id="@+id/text_bantuan2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:textSize="12sp"
+        android:text="Tentang Kami"
+        android:textStyle="bold"
+        android:textColor="#00174C"
+        app:layout_constraintStart_toEndOf="@id/gambar_bantuan2"
+        app:layout_constraintTop_toTopOf="@id/button_bantuan2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tentang Pembuat Aplikasi"
+        android:textSize="10sp"
+        app:layout_constraintTop_toBottomOf="@id/text_bantuan2"
+        app:layout_constraintStart_toStartOf="@id/text_bantuan2"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/baseline_arrow_forward"
+        app:layout_constraintEnd_toEndOf="@id/button_bantuan2"
+        app:layout_constraintTop_toTopOf="@+id/gambar_bantuan2"/>
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
