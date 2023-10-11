@@ -114,7 +114,7 @@
             tools:layout_constraintStart_toTopOf="0.748" />
 
         <EditText
-            android:id="@+id/edt_kronologi"
+            android:id="@+id/edt_kronologi_laporan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
