@@ -61,7 +61,7 @@
         android:layout_marginStart="25dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="25dp"
-        android:background="@drawable/button"
+        android:backgroundTint="@color/md_theme_light_surfaceVariant"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -127,7 +127,7 @@
         android:layout_marginLeft="25dp"
         android:layout_marginTop="20dp"
         android:layout_marginRight="25dp"
-        android:background="@drawable/button"
+        android:backgroundTint="@color/md_theme_light_surfaceVariant"
         app:layout_constraintTop_toBottomOf="@id/textizin"
         tools:layout_editor_absoluteX="-101dp" />
 
@@ -179,7 +179,7 @@
         android:layout_marginLeft="25dp"
         android:layout_marginTop="10dp"
         android:layout_marginRight="25dp"
-        android:background="@drawable/button"
+        android:backgroundTint="@color/md_theme_light_surfaceVariant"
         app:layout_constraintTop_toBottomOf="@+id/button_izin1" />
 
     <ImageView
@@ -230,7 +230,7 @@
         android:layout_marginLeft="25dp"
         android:layout_marginTop="10dp"
         android:layout_marginRight="25dp"
-        android:background="@drawable/button"
+        android:backgroundTint="@color/md_theme_light_surfaceVariant"
         app:layout_constraintTop_toBottomOf="@+id/button_izin2" />
 
 
@@ -283,7 +283,7 @@
         android:layout_marginLeft="25dp"
         android:layout_marginTop="10dp"
         android:layout_marginRight="25dp"
-        android:background="@drawable/button"
+        android:backgroundTint="@color/md_theme_light_surfaceVariant"
         app:layout_constraintTop_toBottomOf="@+id/button_izin3" />
 
     <ImageView
@@ -347,7 +347,7 @@
         android:layout_marginLeft="25dp"
         android:layout_marginTop="15dp"
         android:layout_marginRight="25dp"
-        android:background="@drawable/button"
+        android:backgroundTint="@color/md_theme_light_surfaceVariant"
         app:layout_constraintTop_toBottomOf="@id/text_bantuan" />
 
     <ImageView
@@ -398,7 +398,7 @@
         android:layout_marginLeft="25dp"
         android:layout_marginTop="10dp"
         android:layout_marginRight="25dp"
-        android:background="@drawable/button"
+        android:backgroundTint="@color/md_theme_light_surfaceVariant"
         app:layout_constraintTop_toBottomOf="@+id/button_bantuan1" />
 
     <ImageView
