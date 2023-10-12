@@ -107,8 +107,9 @@
         </RelativeLayout>
 
         <RelativeLayout
-            android:layout_width="411dp"
+            android:layout_width="match_parent"
             android:layout_height="635dp"
+            android:layout_marginEnd="20dp"
             android:layout_marginTop="300dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -127,12 +128,87 @@
             <ScrollView
                 android:layout_width="390dp"
                 android:layout_height="595dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="114dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="739dp"
+                    android:background="@drawable/button"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.666"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    tools:ignore="MissingConstraints">
 
-                <ListView
-                    android:layout_width="390dp"
-                    android:layout_height="595dp"
-                    android:layout_marginTop="10dp"
-                    tools:listitem="@layout/lisartikel" />
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/listImagekontak"
+                        android:layout_width="141dp"
+                        android:layout_height="113dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/img_begal" />
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/listImagekontak1"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="160dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/img_kompas" />
+
+                    <TextView
+                        android:id="@+id/judul_artikel"
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:textColor="@color/black"
+                        android:layout_marginStart="195dp"
+                        android:layout_marginTop="7dp"
+                        android:text="Kompasania"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/subtitle_artikel"
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:textColor="@color/black"
+                        android:layout_marginStart="195dp"
+                        android:layout_marginTop="25dp"
+                        android:text="6 Agustus 2023"
+                        android:textSize="10sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/deskripsi1_artikel"
+                        android:layout_width="179dp"
+                        android:layout_height="26dp"
+                        android:layout_marginStart="165dp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="50dp"
+                        android:text="Begal : Berlindung di balik HAM?"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/deskripsi2_artikel"
+                        android:layout_width="189dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="165dp"
+                        android:layout_marginTop="70dp"
+                        android:paddingTop="7dp"
+                        android:text="Sampai saat ini begal masih menjadi trending topik bagi masyarakat Kota Medan, Sumatra"
+                        android:textColor="@color/black"
+                        android:textSize="9sp"
+                        android:textStyle="normal" />
+
+
+                </RelativeLayout>
+
             </ScrollView>
 
         </RelativeLayout>

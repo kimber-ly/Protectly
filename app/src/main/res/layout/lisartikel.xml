@@ -32,6 +32,7 @@
             android:src="@drawable/img_begal" />
 
         <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/listImagekontak1"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_marginStart="160dp"
@@ -39,39 +40,43 @@
             android:src="@drawable/img_kompas" />
 
         <TextView
+            android:id="@+id/judul_artikel"
             android:layout_width="100dp"
             android:layout_height="30dp"
             android:layout_marginStart="195dp"
             android:layout_marginTop="7dp"
             android:text="Kompasania"
-            android:textSize="13dp"
+            android:textSize="13sp"
             android:textStyle="bold" />
 
         <TextView
+            android:id="@+id/subtitle_artikel"
             android:layout_width="100dp"
             android:layout_height="30dp"
             android:layout_marginStart="195dp"
             android:layout_marginTop="25dp"
             android:text="6 Agustus 2023"
-            android:textSize="10dp"
+            android:textSize="10sp"
             android:textStyle="normal" />
 
         <TextView
+            android:id="@+id/deskripsi1_artikel"
             android:layout_width="179dp"
             android:layout_height="26dp"
             android:layout_marginStart="165dp"
             android:layout_marginTop="50dp"
             android:text="Begal : Berlindung di balik HAM?"
-            android:textSize="12dp"
+            android:textSize="12sp"
             android:textStyle="bold" />
 
         <TextView
+            android:id="@+id/deskripsi2_artikel"
             android:layout_width="189dp"
             android:layout_height="24dp"
             android:layout_marginStart="165dp"
             android:layout_marginTop="70dp"
             android:text="Sampai saat ini begal masih menjadi trending topik bagi masyarakat Kota Medan, Sumatra"
-            android:textSize="9dp"
+            android:textSize="9sp"
             android:textStyle="normal" />
 
 
