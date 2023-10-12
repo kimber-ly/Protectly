@@ -36,7 +36,6 @@
             android:layout_toEndOf="@id/listImage1"
             android:text="Polisi"
             android:textStyle="bold"
-            android:textColor="@color/black"
             android:textSize="20sp" />
         <TextView
             android:id="@+id/listnomor1"
@@ -46,7 +45,6 @@
             android:layout_marginTop="35dp"
             android:layout_toEndOf="@id/listImage1"
             android:text="112"
-            android:textColor="@color/black"
             android:textSize="17sp" />
 
         <ImageButton
@@ -94,7 +92,6 @@
             android:layout_toEndOf="@id/listImage"
             android:text="Ibu"
             android:textStyle="bold"
-            android:textColor="@color/black"
             android:textSize="20sp" />
         <TextView
             android:id="@+id/listnomor"
@@ -104,7 +101,6 @@
             android:layout_marginTop="35dp"
             android:layout_toEndOf="@id/listImage"
             android:text="+62 7801569"
-            android:textColor="@color/black"
             android:textSize="17sp" />
 
         <ImageButton
@@ -152,7 +148,6 @@
             android:layout_toEndOf="@id/listImage2"
             android:text="Ayah"
             android:textStyle="bold"
-            android:textColor="@color/black"
             android:textSize="20sp" />
         <TextView
             android:id="@+id/listnomor2"
@@ -162,7 +157,6 @@
             android:layout_marginTop="35dp"
             android:layout_toEndOf="@id/listImage2"
             android:text="+62 8967821"
-            android:textColor="@color/black"
             android:textSize="17sp" />
 
         <ImageButton
@@ -210,7 +204,6 @@
             android:layout_toEndOf="@id/listImage3"
             android:text="Bestie"
             android:textStyle="bold"
-            android:textColor="@color/black"
             android:textSize="20sp" />
         <TextView
             android:id="@+id/listnomor3"
@@ -220,7 +213,6 @@
             android:layout_marginTop="35dp"
             android:layout_toEndOf="@id/listImage3"
             android:text="+62 7118450"
-            android:textColor="@color/black"
             android:textSize="17sp" />
 
         <ImageButton
@@ -268,7 +260,6 @@
             android:layout_toEndOf="@id/listImage4"
             android:text="Abang"
             android:textStyle="bold"
-            android:textColor="@color/black"
             android:textSize="20sp" />
         <TextView
             android:id="@+id/listnomor4"
@@ -278,7 +269,6 @@
             android:layout_marginTop="35dp"
             android:layout_toEndOf="@id/listImage4"
             android:text="+62 2186610"
-            android:textColor="@color/black"
             android:textSize="17sp" />
 
         <ImageButton
@@ -326,7 +316,6 @@
             android:layout_toEndOf="@id/listImage6"
             android:text="Pak RT"
             android:textStyle="bold"
-            android:textColor="@color/black"
             android:textSize="20sp" />
         <TextView
             android:id="@+id/listnomor6"
@@ -336,7 +325,6 @@
             android:layout_marginTop="35dp"
             android:layout_toEndOf="@id/listImage6"
             android:text="+62 896778"
-            android:textColor="@color/black"
             android:textSize="17sp" />
 
         <ImageButton
@@ -384,7 +372,6 @@
             android:layout_toEndOf="@id/listImage7"
             android:text="Pak RT"
             android:textStyle="bold"
-            android:textColor="@color/black"
             android:textSize="20sp" />
         <TextView
             android:id="@+id/listnomor7"
@@ -394,7 +381,6 @@
             android:layout_marginTop="35dp"
             android:layout_toEndOf="@id/listImage7"
             android:text="+62 896778"
-            android:textColor="@color/black"
             android:textSize="17sp" />
 
         <ImageButton
@@ -442,7 +428,6 @@
             android:layout_toEndOf="@id/listImage5"
             android:text="Pak RT"
             android:textStyle="bold"
-            android:textColor="@color/black"
             android:textSize="20sp" />
         <TextView
             android:id="@+id/listnomor5"
@@ -452,7 +437,6 @@
             android:layout_marginTop="35dp"
             android:layout_toEndOf="@id/listImage5"
             android:text="+62 896778"
-            android:textColor="@color/black"
             android:textSize="17sp" />
 
         <ImageButton
@@ -500,7 +484,6 @@
             android:layout_toEndOf="@id/listImage9"
             android:text="Pak RT"
             android:textStyle="bold"
-            android:textColor="@color/black"
             android:textSize="20sp" />
         <TextView
             android:id="@+id/listnomor9"
@@ -510,7 +493,6 @@
             android:layout_marginTop="35dp"
             android:layout_toEndOf="@id/listImage9"
             android:text="+62 896778"
-            android:textColor="@color/black"
             android:textSize="17sp" />
 
         <ImageButton

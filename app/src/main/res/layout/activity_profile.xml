@@ -42,7 +42,8 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/textView5"
-            app:layout_constraintTop_toTopOf="@+id/textView5" />
+            app:layout_constraintTop_toTopOf="@+id/textView5"
+            />
 
 
         <TextView
@@ -50,9 +51,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="181dp"
-            android:layout_marginRight="181dp"
             android:text="Profile"
-            android:textColor="@color/black"
             android:textSize="24sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -75,7 +74,7 @@
         app:layout_constraintVertical_bias="0.144"
         tools:ignore="MissingConstraints">
 
-        <ImageView
+        <de.hdodenhof.circleimageview.CircleImageView
             android:layout_width="110dp"
             android:layout_height="110dp"
             android:layout_marginHorizontal="35dp"
@@ -88,7 +87,7 @@
             android:layout_marginHorizontal="55dp"
             android:layout_marginVertical="130dp"
             android:text="John Doe"
-            android:textSize="18dp" />
+            android:textSize="18sp" />
 
     </RelativeLayout>
 

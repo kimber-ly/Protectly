@@ -42,7 +42,7 @@
                     android:layout_marginStart="15dp"
                     android:layout_marginTop="12dp"
                     android:text="Pencarian..."
-                    android:textSize="15dp" />
+                    android:textSize="15sp" />
 
                 <SearchView
                     android:layout_width="30dp"
@@ -70,7 +70,7 @@
                     android:layout_height="30dp"
                     android:text="Setasiun Kereta"
                     android:textStyle="bold"
-                    android:textSize="13dp"
+                    android:textSize="13sp"
                     android:layout_marginTop="50dp"
                     android:layout_marginStart="140dp"/>
 
@@ -131,7 +131,6 @@
                 android:layout_marginStart="70dp"
                 android:layout_marginEnd="10dp"
                 android:text="Lokasi"
-                android:textColor="@color/black"
                 android:textSize="30sp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -172,7 +171,6 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
                 android:text="Harap waspada ketika melewati lokasi"
-                android:textColor="@color/black"
                 android:textSize="16sp" />
 
             <TextView
@@ -181,7 +179,6 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
                 android:text="rawan"
-                android:textColor="@color/black"
                 android:textSize="16sp" />
         </LinearLayout>
     </RelativeLayout>

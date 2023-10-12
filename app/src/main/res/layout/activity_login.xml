@@ -47,7 +47,6 @@
         android:layout_margin="24dp"
         android:text="@string/masuk"
         android:backgroundTint="#3F5AA9"
-        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.333"

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -37,28 +38,44 @@
             android:layout_marginEnd="20dp"
             android:layout_marginVertical="10dp"/>
     </RelativeLayout>
-    <RelativeLayout
-        android:layout_width="match_parent"
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/relativeLayout8"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
         android:layout_marginVertical="130dp"
-        android:layout_height="40dp">
+        android:layout_gravity="center_horizontal"
+        >
+
         <TextView
             android:id="@+id/kontak"
-            android:layout_width="80dp"
-            android:layout_height="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="Kontak"
-            android:textSize="18dp"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:paddingEnd="130dp"
             android:textStyle="bold"
-            android:layout_marginVertical="10dp"
-            android:layout_marginHorizontal="50dp"/>
+            app:layout_constraintEnd_toStartOf="@+id/textView13"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <TextView
-            android:layout_width="80dp"
-            android:layout_height="20dp"
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="Pesan"
-            android:textSize="18dp"
-            android:layout_marginStart="270dp"
-            android:layout_marginVertical="10dp"
-            android:layout_marginHorizontal="80dp"/>
-    </RelativeLayout>
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/kontak"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
     <ScrollView
         android:layout_width="match_parent"
         android:layout_marginVertical="190dp"
