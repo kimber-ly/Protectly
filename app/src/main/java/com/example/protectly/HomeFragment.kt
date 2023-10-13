@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageButton
 import android.widget.ImageView
+import android.widget.TextView
 import com.example.protectly.databinding.FragmentLaporanBinding
 
 class HomeFragment : Fragment(), View.OnClickListener {
@@ -16,6 +17,7 @@ class HomeFragment : Fragment(), View.OnClickListener {
     private lateinit var profile: ImageView
     private lateinit var settings: ImageView
     private lateinit var map: ImageView
+    private lateinit var nama: TextView
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -26,6 +28,10 @@ class HomeFragment : Fragment(), View.OnClickListener {
         profile = view.findViewById(R.id.img_profile)
         settings = view.findViewById(R.id.icon_settings)
         map = view.findViewById(R.id.map)
+
+        nama = view.findViewById(R.id.nama)
+        val bundle = arguments
+        nama.text = bundle?.getString("nama")
 
         profile.setOnClickListener(this)
         settings.setOnClickListener(this)
