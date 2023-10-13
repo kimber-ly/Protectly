@@ -1,11 +1,10 @@
 package com.example.protectly
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.Button
 import android.widget.ImageButton
+import androidx.appcompat.app.AppCompatActivity
 
 class ProfileActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var btnubahprofil: ImageButton
@@ -42,7 +41,7 @@ class ProfileActivity : AppCompatActivity(), View.OnClickListener {
         }
         when(v?.id){
             R.id.btn_ubah_pasword -> {
-                val intent = Intent(this@ProfileActivity, EditProfilActivity::class.java)
+                val intent = Intent(this@ProfileActivity, LupaPasswordActivity::class.java)
                 startActivity(intent)
             }
         }
