@@ -1,27 +1,34 @@
 package com.example.protectly
 
-import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ArrayAdapter
 import android.widget.ImageView
 import android.widget.TextView
-class ListAdapter(context: Context, dataArrayList: ArrayList<listKontak?>?) :
-    ArrayAdapter<listKontak?>(context, R.layout.list_kontak, dataArrayList!!) {
-    override fun getView(position: Int, view: View?, parent: ViewGroup): View {
-        var view = view
-        val listData = getItem(position)
-        if (view == null) {
-            view = LayoutInflater.from(context).inflate(R.layout.list_kontak, parent, false)
-        }
-        val listImage = view!!.findViewById<ImageView>(R.id.listImage)
-        val listName = view.findViewById<TextView>(R.id.listName)
-        val listNomor = view.findViewById<TextView>(R.id.listnomor)
+import androidx.recyclerview.widget.RecyclerView
 
-        listImage.setImageResource(listData!!.image)
-        listName.text = listData.name
-        listNomor.text = listData.nomor
-        return view
+class ListAdapter(private var mList: ArrayList<ListKontak>) :
+    RecyclerView.Adapter<ListAdapter.LanguageViewHolder>() {
+
+    inner class LanguageViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        val image : ImageView = itemView.findViewById(R.id.listImage1)
+        val nomor : TextView = itemView.findViewById(R.id.listnomor1)
+        val nama : TextView = itemView.findViewById(R.id.listName1)
+
+    }
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): LanguageViewHolder {
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.list_kontak , parent , false)
+        return LanguageViewHolder(view)
+    }
+
+    override fun onBindViewHolder(holder: LanguageViewHolder, position: Int) {
+        holder.image.setImageResource(mList[position].image)
+        holder.nama.text = mList[position].name
+        holder.nomor.text = mList[position].nomor
+
+    }
+
+    override fun getItemCount(): Int {
+        return mList.size
     }
 }

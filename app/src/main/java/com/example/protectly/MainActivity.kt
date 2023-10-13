@@ -1,6 +1,7 @@
 package com.example.protectly
 
 import EdukasiFragment
+import KontakFragment
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
