@@ -30,8 +30,11 @@ class HomeFragment : Fragment(), View.OnClickListener {
         map = view.findViewById(R.id.map)
 
         nama = view.findViewById(R.id.nama)
-        val bundle = arguments
-        nama.text = bundle?.getString("nama")
+
+        val bundle = Intent().extras
+        if (bundle != null) {
+            nama.text = bundle.getString("nama")
+        }
 
         profile.setOnClickListener(this)
         settings.setOnClickListener(this)
