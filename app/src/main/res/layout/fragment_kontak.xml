@@ -10,7 +10,8 @@
         android:id="@+id/teks1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="36dp"
         android:text="Kontak Darurat"
         android:textSize="30dp"
         android:textStyle="bold"
@@ -41,7 +42,7 @@
     </androidx.appcompat.widget.SearchView>
 
 
-    <ImageButton
+    <de.hdodenhof.circleimageview.CircleImageView
         android:layout_width="40dp"
         android:layout_height="50dp"
         android:layout_alignParentEnd="true"
@@ -53,138 +54,53 @@
         app:layout_constraintBottom_toBottomOf="@id/searchView"
         app:layout_constraintTop_toTopOf="@id/searchView" />
 
-    <TextView
-        android:id="@+id/kontak"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="70dp"
-        android:layout_marginTop="20dp"
-        android:text="Kontak"
-        android:textAlignment="center"
-        android:textSize="18sp"
-        app:layout_constraintHorizontal_bias="0.5"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/searchView" />
 
-    <TextView
-        android:id="@+id/pesan"
-        android:layout_width="wrap_content"
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_kontak"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="164dp"
-        android:layout_marginTop="20dp"
-        android:text="Pesan"
-        android:textAlignment="center"
-        android:textSize="18sp"
-        app:layout_constraintStart_toEndOf="@id/kontak"
-        app:layout_constraintTop_toBottomOf="@id/searchView" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_marginTop="10dp"
-        android:id="@+id/listView"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/kontak"
-        app:layout_constraintVertical_bias="0.0" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        app:layout_constraintTop_toBottomOf="@+id/searchView">
 
-<!--<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_marginVertical="25dp">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Kontak Darurat"
-            android:textStyle="bold"
-            android:layout_marginStart="30dp"
-            android:textSize="30dp"/>
-    </LinearLayout>
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginVertical="70dp">
-
-        <SearchView
-            android:layout_width="314dp"
-            android:layout_height="35dp"
-            android:layout_marginStart="25dp"
-            android:layout_marginEnd="70dp"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/bg_search"
-            android:backgroundTint="@color/md_theme_light_surfaceVariant"
-            />
-        <ImageButton
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:src="@drawable/ic_sos_kontak"
-            android:layout_alignParentEnd="true"
-            android:layout_marginEnd="20dp"
-            android:layout_marginVertical="10dp"/>
-    </RelativeLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/relativeLayout8"
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:layout_marginVertical="130dp"
-        android:layout_gravity="center_horizontal"
-        >
-
-        <TextView
-            android:id="@+id/kontak"
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Kontak"
-            android:textAlignment="center"
-            android:textSize="18sp"
-            android:padding="10dp"
-            android:paddingEnd="130dp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/textView13"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            tools:layout_editor_absoluteX="-5dp"
+            tools:layout_editor_absoluteY="159dp" />
 
-        <TextView
-            android:id="@+id/textView13"
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Pesan"
-            android:textAlignment="center"
-            android:textSize="18sp"
-            android:padding="10dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/kontak"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-    <ScrollView
+            tools:layout_editor_absoluteX="269dp"
+            tools:layout_editor_absoluteY="159dp" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <FrameLayout
+        android:id="@+id/kontak_container"
         android:layout_width="match_parent"
-        android:layout_marginVertical="190dp"
-        android:layout_height="650dp">
-        <androidx.recyclerview.widget.RecyclerView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/listView"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            tools:listitem="@layout/list_kontak" />
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tab_kontak">
 
+    </FrameLayout>
 
-    </ScrollView>
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/listView"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/tab_kontak"-->
+<!--        app:layout_constraintVertical_bias="0.0" />-->
 
-</FrameLayout>-->
+</androidx.constraintlayout.widget.ConstraintLayout>

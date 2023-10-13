@@ -1,35 +1,69 @@
+
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.fragment.app.FragmentTransaction
 import androidx.recyclerview.widget.RecyclerView
+import com.example.protectly.Kontak_Fragment
 import com.example.protectly.ListAdapter
-import com.example.protectly.R
 import com.example.protectly.ListKontak
+import com.example.protectly.Pesan_Fragment
+import com.example.protectly.R
+import com.google.android.material.tabs.TabLayout
 
 class KontakFragment : Fragment() {
 
     private lateinit var recyclerView: RecyclerView
     private var mList = ArrayList<ListKontak>()
     private lateinit var adapter: ListAdapter
+    private lateinit var tab: TabLayout
+    private var currentFragment: Fragment? = null
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_kontak, container, false)
+        tab = view.findViewById(R.id.tab_kontak)
+        currentFragment = Kontak_Fragment()
+        fragment(Kontak_Fragment())
 
-        recyclerView = view.findViewById(R.id.listView)
+        tab.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener{
+            override fun onTabSelected(tab: TabLayout.Tab?) {
+                when (tab?.id){
+                    R.id.tab1 -> fragment(Kontak_Fragment())
+                    R.id.tab2 -> fragment(Pesan_Fragment())
+                }
+            }
 
-        recyclerView.setHasFixedSize(true)
-        recyclerView.layoutManager = LinearLayoutManager(context)
-        addDataToList()
-        adapter = ListAdapter(mList)
-        recyclerView.adapter = adapter
+            override fun onTabUnselected(tab: TabLayout.Tab?) {
+                fragment(currentFragment ?: Kontak_Fragment())
+            }
+
+            override fun onTabReselected(tab: TabLayout.Tab?) {
+                fragment(currentFragment ?: Kontak_Fragment())
+            }
+
+        })
+
+
+//        recyclerView = view.findViewById(R.id.listView)
+//
+//        recyclerView.setHasFixedSize(true)
+//        recyclerView.layoutManager = LinearLayoutManager(context)
+//        addDataToList()
+//        adapter = ListAdapter(mList)
+//        recyclerView.adapter = adapter
 
         return view
+    }
+
+    private fun fragment(fragment: Fragment){
+        val transaction: FragmentTransaction = childFragmentManager.beginTransaction()
+        transaction.replace(R.id.kontak_container, fragment)
+        transaction.commit()
     }
 
     private fun addDataToList() {
