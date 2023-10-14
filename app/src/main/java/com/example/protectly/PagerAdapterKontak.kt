@@ -15,7 +15,7 @@ class PagerAdapterKontak(fm: FragmentManager) : FragmentPagerAdapter(fm) {
         // Return the fragment for each page
         return when (position) {
             0 -> KontakFragment2() // Create FirstFragment class
-            1 -> Pesan_Fragment() // Create SecondFragment class
+            1 -> PesanFragment() // Create SecondFragment class
             // Add more cases for additional pages
             else -> KontakFragment2() // A default fragment or handle the case as needed
         }

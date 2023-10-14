@@ -13,13 +13,6 @@ class KontakFragment2 : Fragment() {
     private var mList = ArrayList<ListKontak>()
     private lateinit var adapter: ListAdapter
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-
-        }
-    }
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?

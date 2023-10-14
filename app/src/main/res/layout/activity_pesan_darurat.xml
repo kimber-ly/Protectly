@@ -116,7 +116,7 @@
             android:layout_marginEnd="131dp"
             android:layout_marginBottom="121dp"
             android:text="View live location"
-            android:textColor="@color/seed">
+            android:textColor="@color/seed"/>
 
         <Button
             android:layout_width="107dp"
