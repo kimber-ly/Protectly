@@ -53,40 +53,57 @@
 
     <RelativeLayout
         android:id="@+id/relativeLayout2"
-        android:layout_width="312dp"
+        android:layout_width="350dp"
         android:layout_height="430dp"
         android:layout_marginBottom="1dp"
         android:background="@color/md_theme_light_surfaceVariant"
+        android:gravity="center"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.282"
+        app:layout_constraintHorizontal_bias="0.459"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.47"
+        app:layout_constraintVertical_bias="0.42"
         tools:ignore="MissingConstraints">
 
         <LinearLayout
-            android:layout_width="133dp"
-            android:layout_height="27dp"
-            android:paddingLeft="15dp"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/design_default_color_primary"
+            android:paddingLeft="10dp"
             android:paddingTop="10dp">
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/design_default_color_primary"
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="5dp"
                 android:text="Semua Kontak"
                 android:textColor="@color/design_default_color_background"
                 android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/caret_icon_24"></ImageView>
+
         </LinearLayout>
 
         <TextView
+            android:layout_width="260dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="30dp"
             android:layout_marginTop="60dp"
-            android:layout_marginLeft="25dp"
-            android:layout_width="244dp"
-            android:layout_height="111dp"
-            android:text="Nama: John Doe"
+            android:text="Nama: John Doe
+                                                Lokasi: Jalan Raya ABC No. 123, Kota X         Saya sedang dalam bahaya dan membutuhkan bantuan secepat mungkin."
             android:textSize="12sp" />
 
         <Button
@@ -97,30 +114,33 @@
             android:layout_marginEnd="29dp"
             android:layout_marginBottom="25dp"
             android:text="Kirim" />
-        
+
     </RelativeLayout>
+
     <RelativeLayout
-        android:layout_width="312dp"
+        android:layout_width="350dp"
         android:layout_height="48dp"
         android:background="@color/md_theme_light_surfaceVariant"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.282"
+        app:layout_constraintHorizontal_bias="0.459"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.866">
+        app:layout_constraintVertical_bias="0.857">
 
         <TextView
             android:layout_width="162dp"
             android:layout_height="25dp"
             android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="141dp"
-            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="185dp"
+            android:layout_marginRight="185dp"
+            android:layout_marginBottom="9dp"
             android:paddingLeft="15dp"
-            android:textColor="@color/md_theme_light_onPrimaryContainer"
             android:paddingTop="1dp"
             android:text="Panggilan Darurat"
+            android:textColor="@color/md_theme_light_onPrimaryContainer"
             android:textSize="13sp" />
 
         <ImageView
@@ -134,27 +154,27 @@
     </RelativeLayout>
 
     <RelativeLayout
-        android:layout_width="312dp"
+        android:layout_width="350dp"
         android:layout_height="48dp"
         android:background="@color/md_theme_light_surfaceVariant"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.282"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.976">
+        app:layout_constraintVertical_bias="0.96">
 
         <TextView
             android:layout_width="162dp"
             android:layout_height="25dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="141dp"
-            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="187dp"
+            android:layout_marginBottom="12dp"
             android:paddingLeft="15dp"
-            android:textColor="@color/md_theme_light_onPrimaryContainer"
-            android:paddingTop="1dp"
+            android:paddingTop="5dp"
             android:text="Pesan"
+            android:textColor="@color/md_theme_light_onPrimaryContainer"
             android:textSize="13sp" />
 
         <ImageView
