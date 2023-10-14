@@ -3,13 +3,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Kontak_Fragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".KontakFragment2">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="Ini list kontak" />
+        android:layout_marginTop="10dp"
+        />
 
 </FrameLayout>
