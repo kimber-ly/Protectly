@@ -4,12 +4,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentTransaction
 import androidx.recyclerview.widget.RecyclerView
-import com.example.protectly.Kontak_Fragment
+import androidx.viewpager.widget.ViewPager
 import com.example.protectly.ListAdapter
 import com.example.protectly.ListKontak
-import com.example.protectly.Pesan_Fragment
+import com.example.protectly.PagerAdapterKontak
 import com.example.protectly.R
 import com.google.android.material.tabs.TabLayout
 
@@ -19,34 +18,22 @@ class KontakFragment : Fragment() {
     private var mList = ArrayList<ListKontak>()
     private lateinit var adapter: ListAdapter
     private lateinit var tab: TabLayout
-    private var currentFragment: Fragment? = null
+
+    private lateinit var viewPager: ViewPager
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_kontak, container, false)
+        viewPager = view.findViewById(R.id.viewPager)
+
+        val adapter = PagerAdapterKontak(childFragmentManager)
+        viewPager.adapter = adapter
+
         tab = view.findViewById(R.id.tab_kontak)
-        currentFragment = Kontak_Fragment()
-        fragment(Kontak_Fragment())
 
-        tab.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener{
-            override fun onTabSelected(tab: TabLayout.Tab?) {
-                when (tab?.id){
-                    R.id.tab1 -> fragment(Kontak_Fragment())
-                    R.id.tab2 -> fragment(Pesan_Fragment())
-                }
-            }
-
-            override fun onTabUnselected(tab: TabLayout.Tab?) {
-                fragment(currentFragment ?: Kontak_Fragment())
-            }
-
-            override fun onTabReselected(tab: TabLayout.Tab?) {
-                fragment(currentFragment ?: Kontak_Fragment())
-            }
-
-        })
+        tab.setupWithViewPager(viewPager)
 
 
 //        recyclerView = view.findViewById(R.id.listView)
@@ -60,11 +47,12 @@ class KontakFragment : Fragment() {
         return view
     }
 
-    private fun fragment(fragment: Fragment){
-        val transaction: FragmentTransaction = childFragmentManager.beginTransaction()
-        transaction.replace(R.id.kontak_container, fragment)
-        transaction.commit()
-    }
+//    private fun fragment(fragment: Fragment){
+//        val fragmentManager = childFragmentManager
+//        val transaction = fragmentManager.beginTransaction()
+//        transaction.replace(R.id.kontak_container, fragment)
+//        transaction.commit()
+//    }
 
     private fun addDataToList() {
         mList.add(ListKontak("Polisi", "112", R.drawable.img_kontak2))
