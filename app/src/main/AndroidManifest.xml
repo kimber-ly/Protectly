@@ -25,6 +25,9 @@
         android:theme="@style/Theme.Protectly"
         tools:targetApi="31">
         <activity
+            android:name=".PesanDaruratActivity"
+            android:exported="false" />
+        <activity
             android:name=".LupaPasswordActivity"
             android:exported="false" />
         <activity
