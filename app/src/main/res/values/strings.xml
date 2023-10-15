@@ -27,5 +27,6 @@
     <string name="no_handphone">No.Handphone</string>
     <string name="tempat_tanggal_lahir">Tempat/Tanggal Lahir</string>
     <string name="jenis_kelamin">Jenis Kelamin</string>
+    <string name="title_activity_lokasi2">LokasiActivity2</string>
 
 </resources>

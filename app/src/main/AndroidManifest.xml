@@ -4,6 +4,7 @@
     tools:ignore="CoarseFineLocation">
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     <uses-permission android:name="android.permission.INTERNET" />
 
     <uses-feature android:name="android.hardware.camera.any" />
@@ -24,18 +25,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Protectly"
         tools:targetApi="31">
-        <activity
-            android:name=".PesanDaruratActivity"
-            android:exported="false" />
-        <activity
-            android:name=".LupaPasswordActivity"
-            android:exported="false" />
-        <activity
-            android:name=".EditProfilActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ProfileActivity"
-            android:exported="false" />
+
         <!--
              TODO: Before you run your application, you need a Google Maps API key.
 
@@ -49,15 +39,31 @@
         -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="@string/google_maps_api_key" />
+            android:value="AIzaSyCkKmE6iJk-wGtaK0FWJbBVgRJL5UzVpCQ" />
 
         <activity
-            android:name=".MapsActivity"
+            android:name=".LokasiActivity2"
             android:exported="false"
-            android:label="@string/title_activity_maps" />
+            android:label="@string/title_activity_lokasi2" />
         <activity
-            android:name=".LokasiActivity"
+            android:name=".PesanDaruratActivity"
             android:exported="false" />
+        <activity
+            android:name=".LupaPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditProfilActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+<!--        <activity-->
+<!--            android:name=".MapsActivity"-->
+<!--            android:exported="false"-->
+<!--            android:label="@string/title_activity_maps" />-->
+<!--        <activity-->
+<!--            android:name=".LokasiActivity"-->
+<!--            android:exported="false" />-->
         <activity
             android:name=".SettingsActivity"
             android:exported="false" />
