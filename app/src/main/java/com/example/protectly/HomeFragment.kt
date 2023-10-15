@@ -22,7 +22,7 @@ class HomeFragment : Fragment(), View.OnClickListener {
         val view = inflater.inflate(R.layout.fragment_home, container, false)
         profile = view.findViewById(R.id.img_profile)
         settings = view.findViewById(R.id.icon_settings)
-        map = view.findViewById(R.id.map)
+        map = view.findViewById(R.id.map_img)
 
         profile.setOnClickListener(this)
         settings.setOnClickListener(this)
@@ -41,8 +41,8 @@ class HomeFragment : Fragment(), View.OnClickListener {
                 val intent = Intent(requireActivity(), SettingsActivity::class.java)
                 startActivity(intent)
             }
-            R.id.map -> {
-                val intent = Intent(requireActivity(), LokasiActivity::class.java)
+            R.id.map_img -> {
+                val intent = Intent(requireActivity(), LokasiActivity2::class.java)
                 startActivity(intent)
             }
         }
