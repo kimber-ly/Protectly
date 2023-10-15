@@ -15,6 +15,7 @@ import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
+import com.google.android.gms.maps.model.CameraPosition
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
 import com.google.android.gms.tasks.Task
@@ -75,14 +76,14 @@ class LokasiActivity2 : AppCompatActivity(), OnMapReadyCallback {
     override fun onMapReady(googleMap: GoogleMap) {
         mMap = googleMap
 
-        if (currentLocation != null) {
-            val lokasiku = LatLng(currentLocation.latitude, currentLocation.longitude)
-            mMap.addMarker(MarkerOptions().position(lokasiku).title("Lokasiku"))
-            mMap.moveCamera(CameraUpdateFactory.newLatLng(lokasiku))
-        }
-        else {
-            Log.e("MyApp", "currentLocation is null in onMapReady")
-        }
+        val lokasiku = LatLng(currentLocation.latitude, currentLocation.longitude)
+        val cameraPosition = CameraPosition.Builder()
+            .target(lokasiku)
+            .zoom(15.0F)
+            .build()
+
+        mMap.moveCamera(CameraUpdateFactory.newCameraPosition(cameraPosition))
+        mMap.addMarker(MarkerOptions().position(lokasiku).title("Lokasiku"))
     }
 
     override fun onRequestPermissionsResult(
