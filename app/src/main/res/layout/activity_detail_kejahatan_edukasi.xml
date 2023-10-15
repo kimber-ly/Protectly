@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailKejahatanEdukasiActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+
+        <ImageView
+            android:id="@+id/gambar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/baseline_arrow_back"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_view1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="64dp"
+            android:text="Apa itu Tindak Kejahatan"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/gambar1" />
+
+        <ImageView
+            android:id="@+id/gambar2"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginEnd="16dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/baseline_logout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/gambar1" />
+
+        <ImageView
+            android:id="@+id/myimageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/gambar_edukasi1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_view1" />
+
+        <ImageView
+            android:id="@+id/myikonview"
+            android:layout_width="39dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="192dp"
+            android:layout_marginTop="72dp"
+            android:src="@drawable/baseline_play_circle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_view1" />
+
+        <ImageView
+            android:id="@+id/myimageview1"
+            android:layout_width="164dp"
+            android:layout_height="134dp"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/ganbar_edukasi1a"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/myimageview"/>
+        <TextView
+            android:id="@+id/textviewa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="20dp"
+            android:textStyle="bold"
+            android:text="Jakarta, 27-juli-2023"
+            app:layout_constraintTop_toBottomOf="@id/myimageview1"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="     Tindak kejahatan adalah tindakan atau perilaku yang melanggar hukum atau norma-norma yang berlaku dalam suatu masyarakat. Tindak kejahatan dapat mencakup berbagai jenis perilaku yang dilarang oleh hukum, dan seseorang yang melakukan tindak kejahatan disebut sebagai pelaku kejahatan atau penjahat.
+
+ \n \n     Tindak kejahatan dapat dibagi menjadi berbagai kategori, termasuk:
+
+Kriminalitas Umum: Melibatkan berbagai jenis tindakan seperti pencurian, perampokan, pencurian kendaraan, penipuan, pemerasan, dan lain sebagainya.
+ \n \n      Kekerasan: Ini mencakup tindakan seperti pembunuhan, pemerkosaan, penganiayaan fisik, perampokan dengan kekerasan, dan lain-lain.
+Kriminalitas Properti: Termasuk tindakan yang merusak atau mencuri properti orang lain, seperti perusakan properti, pembobolan rumah, atau pencurian barang berharga.
+ \n \n Kriminalitas Keuangan: Ini melibatkan penipuan keuangan, pencucian uang, manipulasi pasar, atau tindakan ilegal dalam dunia bisnis dan keuangan.
+ \n \n Kriminalitas Komputer dan Siber: Ini mencakup kegiatan ilegal yang terkait dengan komputer dan teknologi informasi, seperti hacking, penipuan online, atau pencurian identitas.
+\n \n Tindak Kejahatan Terorganisir: Ini melibatkan kejahatan yang diorganisir dan seringkali terlibat dalam aktivitas ilegal yang lebih besar seperti perdagangan manusia, perdagangan narkoba besar-besaran, atau pencucian uang."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textviewa" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

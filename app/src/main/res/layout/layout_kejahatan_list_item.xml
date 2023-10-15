@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/cardview_light_background"
+    app:cardCornerRadius="15dp"
+    android:padding="5dp"
+    android:layout_margin="5dp"
+    android:id="@+id/CardView"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/gambar_kejahatan"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/gambar_edukasi1" />
+
+    <TextView
+        android:id="@+id/kejahatan_judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:text="Apa itu tindak Kejahatan"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
