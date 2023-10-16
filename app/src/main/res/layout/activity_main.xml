@@ -20,6 +20,8 @@
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
         app:menu="@menu/bottom_nav_bar"
+        app:backgroundTint="@color/md_theme_light_primaryContainer"
+        app:itemIconTint="@color/md_theme_light_onPrimaryContainer"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
