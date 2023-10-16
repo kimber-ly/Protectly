@@ -39,17 +39,23 @@ class LokasiActivity2 : AppCompatActivity(), OnMapReadyCallback {
 
     private fun getLastLocation(){
         Log.d("MyApp", "Starting location request")
+
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+
             Log.d("MyApp", "Location permission not granted")
+
             ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.ACCESS_FINE_LOCATION),
                 Companion.FINE_PERMISSION_CODE
             )
             return
         }
         Log.d("MyApp", "Requesting last location")
+
         val task: Task<Location> = fusedLocationProviderClient.lastLocation
         task.addOnSuccessListener {
+
             Log.d("MyApp", "onSuccess")
+
             if (it != null){
                 currentLocation = it
 
@@ -92,7 +98,7 @@ class LokasiActivity2 : AppCompatActivity(), OnMapReadyCallback {
         grantResults: IntArray
     ) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)
-        if (requestCode == Companion.FINE_PERMISSION_CODE){
+        if (requestCode == FINE_PERMISSION_CODE){
             if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED){
                 getLastLocation()
             }
