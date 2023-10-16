@@ -107,16 +107,27 @@
             android:textSize="12sp" />
 
 
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="43dp"
+            android:layout_marginBottom="131dp"
+            android:src="@drawable/pesandarurat" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="20dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
             android:layout_centerInParent="true"
-            android:layout_marginEnd="131dp"
-            android:layout_marginBottom="121dp"
+            android:layout_marginEnd="126dp"
+            android:layout_marginBottom="96dp"
             android:text="View live location"
-            android:textColor="@color/seed"/>
+            android:textColor="@color/seed" />
 
         <Button
             android:layout_width="107dp"
