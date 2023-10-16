@@ -12,7 +12,7 @@ class KontakFragment2 : Fragment() {
     private lateinit var recyclerView: RecyclerView
     private var mList = ArrayList<ListKontak>()
     private lateinit var adapter: ListAdapter
-
+//
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?

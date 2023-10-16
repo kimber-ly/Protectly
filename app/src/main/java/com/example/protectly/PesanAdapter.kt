@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 
 class PesanAdapter
     (private val listPesan: ArrayList<ListPesan>): RecyclerView.Adapter<PesanAdapter.ViewHolderPesan>() {
-
+//
     inner class ViewHolderPesan(view: View): RecyclerView.ViewHolder(view){
         val nama: TextView = view.findViewById(R.id.contact_name)
         val msg: TextView = view.findViewById(R.id.contact_msg)

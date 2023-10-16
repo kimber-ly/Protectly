@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="32dp">
+        >
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/img_profile"
@@ -42,31 +42,34 @@
 
         <ImageView
             android:id="@+id/notifications"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
             android:layout_marginTop="28dp"
-            android:layout_marginEnd="24dp"
-            android:backgroundTint="#00FFFFFF"
-            android:src="@drawable/notif_profile"
+            android:layout_marginEnd="28dp"
+            android:src="@drawable/baseline_notifications"
+            app:layout_constraintBottom_toTopOf="@+id/relativeLayout3"
             app:layout_constraintEnd_toStartOf="@+id/icon_settings"
-            app:layout_constraintHorizontal_bias="0.955"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:tint="@color/md_theme_light_onPrimaryContainer" />
 
         <ImageView
             android:id="@+id/icon_settings"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
             android:layout_margin="24dp"
-            android:layout_marginTop="28dp"
-            android:backgroundTint="#00FFFFFF"
             android:src="@drawable/baseline_settings_24"
+            app:layout_constraintBottom_toTopOf="@+id/relativeLayout3"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/md_theme_light_onPrimaryContainer" />
 
         <RelativeLayout
+            android:id="@+id/relativeLayout3"
             android:layout_width="350dp"
             android:layout_height="180dp"
             android:layout_marginStart="20dp"
@@ -86,7 +89,7 @@
                 android:layout_height="match_parent"
                 android:padding="24dp"
                 android:scaleType="center"
-                android:src="@drawable/bg_map" />
+                android:src="@drawable/gambar_map" />
 
             <!--            <TextView-->
             <!--                android:layout_width="match_parent"-->
@@ -102,123 +105,55 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@color/md_theme_light_surfaceVariant"
-                android:text="Info lokasi rawan"
+                android:background="@color/cardview_light_background"
                 android:padding="10dp"
+                android:text="Info lokasi rawan"
                 android:textStyle="bold" />
 
             <Button
+                android:id="@+id/lokasi_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="210dp"
-                android:layout_marginTop="145dp"
-                android:text="Lihat Selengkapnya"
-                android:textSize="10sp" />
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Lihat Peta"
+                android:textSize="11sp" />
         </RelativeLayout>
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="635dp"
-            android:layout_marginTop="300dp"
-            android:layout_marginEnd="20dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+            android:text="Artikel"
+            android:paddingBottom="5dp"
+            android:textSize="22sp"
+            android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="MissingConstraints">
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout3" />
 
-            <TextView
-                android:layout_width="150dp"
-                android:layout_height="40dp"
-                android:layout_marginStart="20dp"
-                android:text="Artikel"
-                android:textSize="22dp"
-                android:textStyle="bold" />
+        <LinearLayout
+            android:id="@+id/layout_artikel"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView13"
+            android:orientation="horizontal" >
 
-            <ScrollView
-                android:layout_width="390dp"
-                android:layout_height="595dp">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="114dp"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="30dp"
-                    android:layout_marginBottom="739dp"
-                    android:background="@drawable/button"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.666"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.0"
-                    tools:ignore="MissingConstraints">
-
-                    <com.google.android.material.imageview.ShapeableImageView
-                        android:id="@+id/listImagekontak"
-                        android:layout_width="141dp"
-                        android:layout_height="113dp"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginBottom="10dp"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/img_begal" />
-
-                    <com.google.android.material.imageview.ShapeableImageView
-                        android:id="@+id/listImagekontak1"
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_marginStart="160dp"
-                        android:layout_marginTop="10dp"
-                        android:src="@drawable/img_kompas" />
-
-                    <TextView
-                        android:id="@+id/judul_artikel"
-                        android:layout_width="100dp"
-                        android:layout_height="30dp"
-                        android:layout_marginStart="195dp"
-                        android:layout_marginTop="7dp"
-                        android:text="Kompasania"
-                        android:textSize="13sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/subtitle_artikel"
-                        android:layout_width="100dp"
-                        android:layout_height="30dp"
-                        android:layout_marginStart="195dp"
-                        android:layout_marginTop="25dp"
-                        android:text="6 Agustus 2023"
-                        android:textSize="10sp"
-                        android:textStyle="normal" />
-
-                    <TextView
-                        android:id="@+id/deskripsi1_artikel"
-                        android:layout_width="179dp"
-                        android:layout_height="26dp"
-                        android:layout_marginStart="165dp"
-                        android:layout_marginTop="50dp"
-                        android:text="Begal : Berlindung di balik HAM?"
-                        android:textSize="12sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/deskripsi2_artikel"
-                        android:layout_width="189dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="165dp"
-                        android:layout_marginTop="70dp"
-                        android:paddingTop="7dp"
-                        android:text="Sampai saat ini begal masih menjadi trending topik bagi masyarakat Kota Medan, Sumatra"
-                        android:textSize="9sp"
-                        android:textStyle="normal" />
-
-
-                </RelativeLayout>
-
-            </ScrollView>
-
-        </RelativeLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_artikel_home"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp" />
+        </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
