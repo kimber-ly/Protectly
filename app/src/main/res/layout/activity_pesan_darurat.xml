@@ -68,32 +68,32 @@
         tools:ignore="MissingConstraints">
 
         <LinearLayout
-            android:layout_width="120dp"
-            android:layout_height="40dp"
+            android:layout_width="133dp"
+            android:layout_height="27dp"
             android:layout_marginStart="15dp"
             android:layout_marginTop="15dp"
-            android:background="@color/seed"
-            android:paddingLeft="10dp"
-            android:paddingTop="10dp">
+            android:background="@drawable/btn_blue"
+            android:paddingLeft="12dp"
+            android:paddingTop="8dp">
 
             <TextView
-                android:layout_width="80dp"
-                android:layout_height="20dp"
+                android:layout_width="94dp"
+                android:layout_height="27dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="1dp"
-                android:layout_marginBottom="5dp"
                 android:text="Semua Kontak"
                 android:textColor="@color/design_default_color_background"
                 android:textSize="12sp" />
 
             <ImageView
-                android:layout_width="25dp"
-                android:layout_height="30dp"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
                 android:layout_alignParentEnd="true"
                 android:layout_centerInParent="true"
                 android:layout_gravity="center"
-                android:layout_marginBottom="5dp"
-                android:src="@drawable/caretupdown"></ImageView>
+                android:layout_marginBottom="3dp"
+                android:src="@drawable/caretupdown">
+            </ImageView>
 
         </LinearLayout>
 
