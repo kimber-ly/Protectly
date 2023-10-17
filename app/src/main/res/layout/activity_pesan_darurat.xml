@@ -72,7 +72,7 @@
             android:layout_height="40dp"
             android:layout_marginStart="15dp"
             android:layout_marginTop="15dp"
-            android:background="@color/design_default_color_primary"
+            android:background="@color/seed"
             android:paddingLeft="10dp"
             android:paddingTop="10dp">
 
