@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MetodePanggilanActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        android:textColor="@color/md_theme_dark_scrim"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="185dp"
+        tools:layout_editor_absoluteY="79dp" />
+
+    <ImageView
+        android:layout_width="116dp"
+        android:layout_height="116dp"
+        android:src="@drawable/profilbestie"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="184dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bestie"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="171dp"
+        tools:layout_editor_absoluteY="332dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/metodepanggilan1"
+        tools:layout_editor_absoluteX="73dp"
+        tools:layout_editor_absoluteY="448dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/metodepanggilan2"
+        tools:layout_editor_absoluteX="72dp"
+        tools:layout_editor_absoluteY="539dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/metodepanggilan3"
+        tools:layout_editor_absoluteX="181dp"
+        tools:layout_editor_absoluteY="646dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
