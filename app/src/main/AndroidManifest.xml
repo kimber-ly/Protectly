@@ -26,6 +26,9 @@
         android:theme="@style/Theme.Protectly"
         tools:targetApi="31">
         <activity
+            android:name=".MetodePanggilanActivity"
+            android:exported="false" />
+        <activity
             android:name=".PesanHasilRecordActivity"
             android:exported="false" />
         <!--
