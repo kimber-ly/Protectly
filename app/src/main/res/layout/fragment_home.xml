@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:background="@drawable/home_screen"
     android:layout_height="match_parent"
-    tools:context=".HomeFragment">
+    tools:context=".Home.HomeFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <androidx.constraintlayout.widget.ConstraintLayout

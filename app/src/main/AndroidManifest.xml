@@ -26,22 +26,22 @@
         android:theme="@style/Theme.Protectly"
         tools:targetApi="31">
         <activity
-            android:name=".ResetGestureActivity"
+            android:name=".Home.Profile.ResetGestureActivity"
             android:exported="false" />
         <activity
-            android:name=".GestureSaveActivity"
+            android:name=".Home.Profile.GestureSaveActivity"
             android:exported="false" />
         <activity
-            android:name=".SettingsActivity"
+            android:name=".Home.Settings.SettingsActivity"
             android:exported="false" />
         <activity
-            android:name=".ChatActivity"
+            android:name=".Kontak.ChatActivity"
             android:exported="false" />
         <activity
-            android:name=".MetodePanggilanActivity"
+            android:name=".Kontak.MetodePanggilanActivity"
             android:exported="false" />
         <activity
-            android:name=".PesanHasilRecordActivity"
+            android:name=".Kontak.PesanHasilRecordActivity"
             android:exported="false" />
         <!--
              TODO: Before you run your application, you need a Google Maps API key.
@@ -59,20 +59,20 @@
             android:value="AIzaSyCkKmE6iJk-wGtaK0FWJbBVgRJL5UzVpCQ" />
 
         <activity
-            android:name=".LokasiActivity2"
+            android:name=".Home.Lokasi.LokasiActivity2"
             android:exported="false"
             android:label="@string/title_activity_lokasi2" />
         <activity
-            android:name=".PesanDaruratActivity"
+            android:name=".Kontak.PesanDaruratActivity"
             android:exported="false" />
         <activity
             android:name=".LupaPasswordActivity"
             android:exported="false" />
         <activity
-            android:name=".EditProfilActivity"
+            android:name=".Home.Profile.EditProfilActivity"
             android:exported="false" />
         <activity
-            android:name=".ProfileActivity"
+            android:name=".Home.Profile.ProfileActivity"
             android:exported="false" /> <!-- <activity -->
         <!-- android:name=".MapsActivity" -->
         <!-- android:exported="false" -->
@@ -81,13 +81,13 @@
         <!-- android:name=".LokasiActivity" -->
         <!-- android:exported="false" /> -->
         <activity
-            android:name=".GestureActivity"
+            android:name=".Home.Profile.GestureActivity"
             android:exported="false" />
         <activity
-            android:name=".StatusLaporanActivity"
+            android:name=".Laporan.StatusLaporanActivity"
             android:exported="false" />
         <activity
-            android:name=".LaporanKosong"
+            android:name=".Laporan.LaporanKosong"
             android:exported="false" />
         <activity
             android:name=".LoginActivity"

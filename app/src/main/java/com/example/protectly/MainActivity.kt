@@ -1,10 +1,13 @@
 package com.example.protectly
 
-import EdukasiFragment
-import KontakFragment
+import com.example.protectly.Edukasi.EdukasiFragment
+import com.example.protectly.Kontak.KontakFragment
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
+import com.example.protectly.Camera.RekamFragment
+import com.example.protectly.Home.HomeFragment
+import com.example.protectly.Laporan.LaporanFragment
 import com.example.protectly.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
