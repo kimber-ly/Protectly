@@ -92,16 +92,16 @@
                 android:layout_centerInParent="true"
                 android:layout_gravity="center"
                 android:layout_marginBottom="3dp"
-                android:src="@drawable/caretupdown"></ImageView>
+                android:src="@drawable/caretupdown"/>
         </LinearLayout>
         <TextView
-            android:layout_width="260dp"
-            android:layout_height="80dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="80dp"
-            android:text="Nama: John Doe
-                                                Lokasi: Jalan Raya ABC No. 123, Kota X         Saya sedang dalam bahaya dan membutuhkan bantuan secepat mungkin."
-            android:textSize="12sp" />
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="60dp"
+            android:text="Nama: John Doe\nLokasi: Jalan Raya ABC No. 123, Kota X. \nSaya sedang dalam bahaya dan membutuhkan bantuan secepat mungkin."
+            android:textSize="16sp" />
 
         <LinearLayout
             android:layout_width="300dp"
@@ -130,6 +130,7 @@
         </LinearLayout>
 
         <TextView
+            android:id="@+id/view_location"
             android:layout_width="wrap_content"
             android:layout_height="20dp"
             android:layout_alignParentEnd="true"

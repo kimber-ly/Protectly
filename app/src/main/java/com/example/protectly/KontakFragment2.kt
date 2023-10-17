@@ -11,8 +11,8 @@ import androidx.recyclerview.widget.RecyclerView
 class KontakFragment2 : Fragment() {
     private lateinit var recyclerView: RecyclerView
     private var mList = ArrayList<ListKontak>()
-    private lateinit var adapter: ListAdapter
-//
+    private lateinit var adapter: KontakAdapter
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -25,7 +25,7 @@ class KontakFragment2 : Fragment() {
         recyclerView.setHasFixedSize(true)
         recyclerView.layoutManager = LinearLayoutManager(context)
         addDataToList()
-        adapter = ListAdapter(mList)
+        adapter = KontakAdapter(mList)
         recyclerView.adapter = adapter
 
         return view

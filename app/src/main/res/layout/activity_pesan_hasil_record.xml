@@ -92,7 +92,7 @@
                 android:layout_centerInParent="true"
                 android:layout_gravity="center"
                 android:layout_marginBottom="3dp"
-                android:src="@drawable/caretupdown"></ImageView>
+                android:src="@drawable/caretupdown"/>
         </LinearLayout>
 
         <ImageView
@@ -101,7 +101,7 @@
             android:layout_alignParentRight="true"
             android:layout_marginTop="23dp"
             android:layout_marginRight="29dp"
-            android:src="@drawable/icongaleri"
+            android:src="@drawable/icongaleri"/>
 
         <LinearLayout
             android:layout_width="300dp"
