@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/md_theme_light_onPrimary"
+    app:cardCornerRadius="20dp"
+    android:layout_marginHorizontal="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="Protectly"
+            android:textColor="#3F5AA9"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Message"
+            android:gravity="center"
+            android:id="@+id/tvMessage"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp" >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnYes"
+                android:text="Yes"
+                android:layout_margin="5dp"
+                android:textSize="14sp"
+                android:textAllCaps="false" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnNo"
+                android:text="No"
+                android:textSize="14sp"
+                android:layout_margin="5dp"
+                android:textAllCaps="false"
+                android:backgroundTint="#A4A4A4"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

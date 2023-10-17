@@ -47,7 +47,7 @@ class ProfileActivity : AppCompatActivity(), View.OnClickListener {
         }
         when(v?.id){
             R.id.btn_buat_gesture -> {
-                val intent = Intent(this@ProfileActivity, EditProfilActivity::class.java)
+                val intent = Intent(this@ProfileActivity, GestureActivity::class.java)
                 startActivity(intent)
             }
         }
