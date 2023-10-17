@@ -20,7 +20,7 @@ class HomeFragment : Fragment(), View.OnClickListener {
     private lateinit var profile: ImageView
     private lateinit var settings: ImageView
     private lateinit var mapBtn: Button
-
+    private lateinit var btnNotif: Button
     private lateinit var recyclerView: RecyclerView
     private var artikel = ArrayList<ArtikelDataClassHome>()
     private lateinit var artikelAdapterHome: ArtikelAdapterHome
@@ -34,6 +34,7 @@ class HomeFragment : Fragment(), View.OnClickListener {
         profile = view.findViewById(R.id.img_profile)
         settings = view.findViewById(R.id.icon_settings)
         mapBtn = view.findViewById(R.id.lokasi_btn)
+        btnNotif = view.findViewById(R.id.notifications)
 
         recyclerView = view.findViewById(R.id.recycler_artikel_home)
         recyclerView.setHasFixedSize(true)
@@ -123,6 +124,10 @@ class HomeFragment : Fragment(), View.OnClickListener {
             }
             R.id.lokasi_btn -> {
                 val intent = Intent(requireActivity(), LokasiActivity2::class.java)
+                startActivity(intent)
+            }
+            R.id.notifications -> {
+                val intent = Intent(requireActivity(), NotificationActivity::class.java)
                 startActivity(intent)
             }
         }

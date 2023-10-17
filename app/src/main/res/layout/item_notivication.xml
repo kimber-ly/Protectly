@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    app:cardBackgroundColor="#E2E1EC"
+    app:cardUseCompatPadding="true"
+    android:layout_marginHorizontal="8dp"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutConstraint"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:padding="8dp"
+        >
+
+        <ImageView
+            android:id="@+id/gambar_notif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/baseline_securit"
+            app:layout_constraintStart_toStartOf="@+id/layoutConstraint"
+            app:layout_constraintTop_toTopOf="@+id/layoutConstraint" />
+
+        <TextView
+            android:id="@+id/text_notif1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="Keamanan Akun"
+            android:textColor="#00174C"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/gambar_notif"
+            app:layout_constraintTop_toTopOf="@id/layoutConstraint" />
+
+        <TextView
+            android:id="@+id/text_notif2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email, Kata Sandi"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="@id/text_notif1"
+            app:layout_constraintTop_toBottomOf="@id/text_notif1" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
