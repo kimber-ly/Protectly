@@ -42,7 +42,7 @@
         android:layout_marginEnd="82dp"
         android:gravity="center"
         android:text="Bestie"
-        android:textSize="27sp"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/call"
         app:layout_constraintHorizontal_bias="0.5"
@@ -78,9 +78,11 @@
         android:layout_height="52dp"
         android:layout_marginHorizontal="35dp"
         android:layout_marginVertical="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="11dp"
         android:src="@drawable/img_profile"
-        tools:layout_editor_absoluteX="336dp"
-        tools:layout_editor_absoluteY="131dp" />
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout4"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <RelativeLayout
         android:id="@+id/relativeLayout4"
@@ -131,9 +133,7 @@
             android:layout_marginLeft="25dp"
             android:layout_marginTop="25dp"
             android:layout_marginRight="15dp"
-            android:text="Nama: John Doe
-                                          Lokasi: Jalan Raya ABC No. 123, Kota X
-      Saya sedang dalam bahaya dan membutuhkan bantuan secepat mungkin."
+            android:text="Nama: John Doe\nLokasi: Jalan Raya ABC No. 123, Kota X.\nSaya sedang dalam bahaya dan membutuhkan bantuan secepat mungkin."
             android:textSize="12sp" />
 
         <TextView
@@ -160,26 +160,33 @@
     </RelativeLayout>
 
     <ImageView
+        android:id="@+id/profil_kontak_2"
         android:layout_width="55dp"
         android:layout_height="52dp"
         android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="9dp"
         android:src="@drawable/profilbestie"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="512dp" />
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout8"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <RelativeLayout
+        android:id="@+id/relativeLayout8"
         android:layout_width="226dp"
         android:layout_height="62dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="28dp"
         android:background="@drawable/bg_chat"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="573dp">
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout9"
+        app:layout_constraintStart_toStartOf="parent">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
             android:layout_marginTop="10dp"
-            android:text="Kamu stay dulu ya disana aku   cari bantuan dulu." />
+            android:text="Kamu stay dulu ya disana aku cari bantuan dulu." />
 
         <TextView
             android:layout_width="34dp"
@@ -196,6 +203,7 @@
     </RelativeLayout>
 
     <RelativeLayout
+        android:id="@+id/relativeLayout9"
         android:layout_width="300dp"
         android:layout_height="48dp"
         android:background="@drawable/bg_chat"
@@ -220,15 +228,16 @@
             android:text="Ketik Pesan"
             android:textColor="@color/md_theme_light_onPrimaryContainer"
             android:textSize="13sp" />
-    </RelativeLayout
+    </RelativeLayout>
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
+        android:layout_marginEnd="21dp"
         android:src="@drawable/buttonkirimpesan"
-        tools:layout_editor_absoluteX="340dp"
-        tools:layout_editor_absoluteY="661dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
