@@ -18,7 +18,7 @@ class NotificationAdapter (private var mList: List<NotificationData>) :
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int):LanguageViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_notivication, parent , false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_notification, parent , false)
         return LanguageViewHolder(view)
     }
 

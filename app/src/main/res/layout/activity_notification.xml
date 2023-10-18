@@ -10,11 +10,10 @@
         android:id="@+id/gambar1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="28dp"
         android:src="@drawable/baseline_arrow_back"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.044"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -22,50 +21,43 @@
         android:id="@+id/textnotiftitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toEndOf="@id/gambar1"
-        app:layout_constraintTop_toTopOf="@id/gambar1"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
         android:text="Notifikasi"
-        android:textStyle="bold"
         android:textSize="30sp"
-        android:layout_marginStart="20dp"/>
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/gambar1"
+        app:layout_constraintTop_toTopOf="@id/gambar1" />
 
     <ImageButton
         android:id="@+id/buttonSettings"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="@id/textnotiftitle"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginTop="36dp"
         android:background="@color/md_theme_light_onPrimary"
         android:src="@drawable/baseline_settings_24s"
-        />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.844"
+        app:layout_constraintStart_toEndOf="@+id/textnotiftitle"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/mark"
-        android:text="Mark as a read"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="30dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/buttonSettings"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="24dp"
+        android:text="Mark as a read"
         app:layout_constraintEnd_toEndOf="parent"
-        />
+        app:layout_constraintTop_toBottomOf="@id/buttonSettings" />
 
-    <ScrollView
-        android:id="@+id/scrollview"
-        android:layout_width="0dp"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewNotifikasi"
+        android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mark"
-        app:layout_constraintVertical_bias="0.0">
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-    </ScrollView>
+        app:layout_constraintTop_toBottomOf="@+id/mark" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

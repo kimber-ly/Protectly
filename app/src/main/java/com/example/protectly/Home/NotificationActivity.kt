@@ -1,18 +1,16 @@
 package com.example.protectly.Home
 
-import android.annotation.SuppressLint
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.ImageButton
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.protectly.Home.Settings.NotificationAdapter
 import com.example.protectly.Home.Settings.NotificationData
 import com.example.protectly.Home.Settings.SettingsActivity
 import com.example.protectly.R
-import java.util.ArrayList
 
 class NotificationActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var recyclerView: RecyclerView
@@ -27,7 +25,7 @@ class NotificationActivity : AppCompatActivity(), View.OnClickListener {
         btnsetting = findViewById(R.id.buttonSettings)
         btnsetting.setOnClickListener(this)
 
-        recyclerView = findViewById(R.id.recyclerView) as RecyclerView
+        recyclerView = findViewById(R.id.recyclerViewNotifikasi)
         val layoutManager = LinearLayoutManager(this)
         recyclerView.layoutManager = layoutManager
 

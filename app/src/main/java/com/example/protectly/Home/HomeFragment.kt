@@ -20,7 +20,7 @@ class HomeFragment : Fragment(), View.OnClickListener {
     private lateinit var profile: ImageView
     private lateinit var settings: ImageView
     private lateinit var mapBtn: Button
-    private lateinit var btnNotif: Button
+    private lateinit var btnNotif: ImageView
     private lateinit var recyclerView: RecyclerView
     private var artikel = ArrayList<ArtikelDataClassHome>()
     private lateinit var artikelAdapterHome: ArtikelAdapterHome
@@ -46,6 +46,7 @@ class HomeFragment : Fragment(), View.OnClickListener {
         profile.setOnClickListener(this)
         settings.setOnClickListener(this)
         mapBtn.setOnClickListener(this)
+        btnNotif.setOnClickListener(this)
         return view
 
     }

@@ -35,6 +35,9 @@
             android:name=".Home.Settings.SettingsActivity"
             android:exported="false" />
         <activity
+            android:name=".Home.NotificationActivity"
+            android:exported="false" />
+        <activity
             android:name=".Kontak.ChatActivity"
             android:exported="false" />
         <activity
@@ -73,13 +76,8 @@
             android:exported="false" />
         <activity
             android:name=".Home.Profile.ProfileActivity"
-            android:exported="false" /> <!-- <activity -->
-        <!-- android:name=".MapsActivity" -->
-        <!-- android:exported="false" -->
-        <!-- android:label="@string/title_activity_maps" /> -->
-        <!-- <activity -->
-        <!-- android:name=".LokasiActivity" -->
-        <!-- android:exported="false" /> -->
+            android:exported="false" />
+
         <activity
             android:name=".Home.Profile.GestureActivity"
             android:exported="false" />
