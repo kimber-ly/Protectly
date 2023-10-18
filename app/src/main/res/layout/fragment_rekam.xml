@@ -29,6 +29,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="0.8"
+            android:adjustViewBounds="true"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -36,7 +37,7 @@
             app:layout_constraintTop_toBottomOf="@+id/teks1"
             app:layout_constraintVertical_bias="0.0" />
 
-        <TableRow>
+<!--        <TableRow>-->
 <!--            <ImageView-->
 <!--                android:id="@+id/btn_gallery"-->
 <!--                android:layout_width="80dp"-->
@@ -53,22 +54,37 @@
 <!--                app:layout_constraintVertical_bias="1.0"-->
 <!--                app:tint="@color/md_theme_light_surfaceVariant" />-->
 
-            <ImageView
-                android:id="@+id/btn_capture"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:background="@color/md_theme_light_primary"
-                android:padding="10dp"
-                android:layout_margin="10dp"
-                android:src="@drawable/baseline_camera_alt_24"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.498"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/rekam_img"
-                app:layout_constraintVertical_bias="1.0"
-                app:tint="@color/md_theme_light_surfaceVariant" />
-        </TableRow>
+<!--            <ImageView-->
+<!--                android:id="@+id/btn_capture"-->
+<!--                android:layout_width="80dp"-->
+<!--                android:layout_height="80dp"-->
+<!--                android:background="@color/md_theme_light_primary"-->
+<!--                android:padding="10dp"-->
+<!--                android:layout_margin="10dp"-->
+<!--                android:src="@drawable/baseline_camera_alt_24"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintHorizontal_bias="0.498"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/rekam_img"-->
+<!--                app:layout_constraintVertical_bias="1.0"-->
+<!--                app:tint="@color/md_theme_light_surfaceVariant" />-->
+<!--        </TableRow>-->
+        <ImageView
+            android:id="@+id/btn_capture"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/md_theme_light_primary"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/baseline_camera_alt_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rekam_img"
+            app:layout_constraintVertical_bias="1.0"
+            app:tint="@color/md_theme_light_surfaceVariant" />
 
     </TableLayout>
 

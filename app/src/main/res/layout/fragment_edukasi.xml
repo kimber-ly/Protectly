@@ -13,7 +13,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="36dp"
         android:layout_marginBottom="20dp"
-        android:text="Settings"
+        android:text="Edukasi"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"

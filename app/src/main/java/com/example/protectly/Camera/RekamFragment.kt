@@ -2,10 +2,14 @@ package com.example.protectly.Camera
 
 import android.Manifest
 import android.app.Activity
+import android.app.Notification.Action
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.graphics.Bitmap
+import android.media.MediaScannerConnection
+import android.net.Uri
 import android.os.Bundle
+import android.os.Environment
 import android.provider.MediaStore
 import android.view.LayoutInflater
 import android.view.View
@@ -16,6 +20,11 @@ import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import com.example.protectly.R
+import java.io.File
+import java.io.FileOutputStream
+import java.text.SimpleDateFormat
+import java.util.Date
+import java.util.Locale
 
 
 class RekamFragment : Fragment() {
@@ -85,10 +94,41 @@ class RekamFragment : Fragment() {
         if (resultCode == Activity.RESULT_OK) {
             if (requestCode == CAMERA_REQUEST_CODE) {
                 val thumbnail: Bitmap? = data?.extras?.get("data") as Bitmap?
-                thumbnail?.let {
-                    rekamImg.setImageBitmap(it)
+                rekamImg.setImageBitmap(thumbnail)
+                if (thumbnail != null) {
+                    saveToGallery(thumbnail)
                 }
             }
+        }
+    }
+    private fun saveToGallery(thumbnail: Bitmap){
+        val storageDir: File = Environment.getExternalStoragePublicDirectory(
+            Environment.DIRECTORY_PICTURES)
+        val timeStamp = SimpleDateFormat("yyyyMMdd_HHmmss",
+            Locale.getDefault()).format(Date())
+        val fileName = "IMG_$timeStamp.jpg"
+
+        val imageFile = File(storageDir, fileName)
+
+        try {
+            val outputStream = FileOutputStream(imageFile)
+            thumbnail.compress(Bitmap.CompressFormat.JPEG, 100, outputStream)
+            outputStream.flush()
+            outputStream.close()
+
+            val mediaScanIntent = Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE)
+            mediaScanIntent.setData(Uri.fromFile(imageFile))
+
+            MediaScannerConnection.scanFile(
+                requireContext(),
+                arrayOf(imageFile.absolutePath),
+                null, null
+            )
+            Toast.makeText(requireContext(), "Image saved successfully",
+                Toast.LENGTH_SHORT).show()
+
+        }catch (e: Exception){
+            e.printStackTrace()
         }
     }
 
