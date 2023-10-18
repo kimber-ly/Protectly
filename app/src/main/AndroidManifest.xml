@@ -26,6 +26,9 @@
         android:theme="@style/Theme.Protectly"
         tools:targetApi="31">
         <activity
+            android:name=".Lengkapi_Dokumen"
+            android:exported="false" />
+        <activity
             android:name=".Home.Profile.ResetGestureActivity"
             android:exported="false" />
         <activity

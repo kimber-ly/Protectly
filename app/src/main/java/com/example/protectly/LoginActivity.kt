@@ -6,6 +6,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
+import com.example.protectly.Home.HomeFragment
 
 class LoginActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var btnLogin: Button
